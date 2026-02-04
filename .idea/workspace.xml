@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ace50c66-ca97-43e3-81bd-c0ee5c3a6d0e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/AI_CHATBOT_FEATURES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_FEATURES_INDEX.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiom.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiom/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/axiom/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiom/lib/screens/APIManagementScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/axiom/lib/screens/APIManagementScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiom/lib/screens/Dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/axiom/lib/screens/Dashboard.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiom/lib/screens/editor/widgets/widget_palette.dart" beforeDir="false" afterPath="$PROJECT_DIR$/axiom/lib/screens/editor/widgets/widget_palette.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiom/lib/services/FormHandler.dart" beforeDir="false" afterPath="$PROJECT_DIR$/axiom/lib/services/FormHandler.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiom/lib/services/project_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/axiom/lib/services/project_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiom/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/axiom/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiom/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/axiom/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiomBackend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/axiomBackend/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiomBackend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/axiomBackend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiomBackend/src/routes/aiAgentRoutes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiomBackend/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/axiomBackend/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axiomBackend/src/services/aiAgentService.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="3997phXzTFlZMoOqLfoTIITArDA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Aasheeta Learning-Projects As Trainee/GitHub/Axiom",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ace50c66-ca97-43e3-81bd-c0ee5c3a6d0e" name="Changes" comment="" />
+      <created>1770096617159</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770096617159</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="144" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="145" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,1415 @@
+Index: axiom/pubspec.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>name: axiom\r\ndescription: \"A new Flutter project.\"\r\n# The following line prevents the package from being accidentally published to\r\n# pub.dev using `flutter pub publish`. This is preferred for private packages.\r\npublish_to: 'none' # Remove this line if you wish to publish to pub.dev\r\n\r\n# The following defines the version and build number for your application.\r\n# A version number is three numbers separated by dots, like 1.2.43\r\n# followed by an optional build number separated by a +.\r\n# Both the version and the builder number may be overridden in flutter\r\n# build by specifying --build-name and --build-number, respectively.\r\n# In Android, build-name is used as versionName while build-number used as versionCode.\r\n# Read more about Android versioning at https://developer.android.com/studio/publish/versioning\r\n# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.\r\n# Read more about iOS versioning at\r\n# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html\r\n# In Windows, build-name is used as the major, minor, and patch parts\r\n# of the product and file versions while build-number is used as the build suffix.\r\nversion: 1.0.0+1\r\n\r\nenvironment:\r\n  sdk: ^3.10.3\r\n\r\n# Dependencies specify other packages that your package needs in order to work.\r\n# To automatically upgrade your package dependencies to the latest versions\r\n# consider running `flutter pub upgrade --major-versions`. Alternatively,\r\n# dependencies can be manually updated by changing the version numbers below to\r\n# the latest version available on pub.dev. To see which dependencies have newer\r\n# versions available, run `flutter pub outdated`.\r\ndependencies:\r\n  flutter:\r\n    sdk: flutter\r\n\r\n  # The following adds the Cupertino Icons font to your application.\r\n  # Use with the CupertinoIcons class for iOS style icons.\r\n  cupertino_icons: ^1.0.8\r\n  google_fonts: ^6.1.0\r\n  flutter_colorpicker: ^1.0.3\r\n\r\n  # State Management\r\n  provider: ^6.1.1\r\n  # HTTP & API\r\n  http: ^1.1.2\r\n  dio: ^5.4.0\r\n  # Real-time\r\n  socket_io_client: ^2.0.3+1\r\n  # Storage\r\n  shared_preferences: ^2.2.2\r\n  # Utils\r\n  uuid: ^4.3.3\r\n  flutter_svg: ^2.0.9\r\n  json_annotation: ^4.8.1\r\n\r\ndev_dependencies:\r\n  flutter_test:\r\n    sdk: flutter\r\n  json_serializable: ^6.7.1\r\n  build_runner: ^2.4.8\r\n\r\n  # The \"flutter_lints\" package below contains a set of recommended lints to\r\n  # encourage good coding practices. The lint set provided by the package is\r\n  # activated in the `analysis_options.yaml` file located at the root of your\r\n  # package. See that file for information about deactivating specific lint\r\n  # rules and activating additional ones.\r\n  flutter_lints: ^6.0.0\r\n\r\n# For information on the generic Dart part of this file, see the\r\n# following page: https://dart.dev/tools/pub/pubspec\r\n\r\n# The following section is specific to Flutter packages.\r\nflutter:\r\n\r\n  # The following line ensures that the Material Icons font is\r\n  # included with your application, so that you can use the icons in\r\n  # the material Icons class.\r\n  uses-material-design: true\r\n\r\n  # To add assets to your application, add an assets section, like this:\r\n  # assets:\r\n  #   - images/a_dot_burr.jpeg\r\n  #   - images/a_dot_ham.jpeg\r\n\r\n  # An image asset can refer to one or more resolution-specific \"variants\", see\r\n  # https://flutter.dev/to/resolution-aware-images\r\n\r\n  # For details regarding adding assets from package dependencies, see\r\n  # https://flutter.dev/to/asset-from-package\r\n\r\n  # To add custom fonts to your application, add a fonts section here,\r\n  # in this \"flutter\" section. Each entry in this list should have a\r\n  # \"family\" key with the font family name, and a \"fonts\" key with a\r\n  # list giving the asset and other descriptors for the font. For\r\n  # example:\r\n  # fonts:\r\n  #   - family: Schyler\r\n  #     fonts:\r\n  #       - asset: fonts/Schyler-Regular.ttf\r\n  #       - asset: fonts/Schyler-Italic.ttf\r\n  #         style: italic\r\n  #   - family: Trajan Pro\r\n  #     fonts:\r\n  #       - asset: fonts/TrajanPro.ttf\r\n  #       - asset: fonts/TrajanPro_Bold.ttf\r\n  #         weight: 700\r\n  #\r\n  # For details regarding fonts from package dependencies,\r\n  # see https://flutter.dev/to/font-from-package\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/axiom/pubspec.yaml b/axiom/pubspec.yaml
+--- a/axiom/pubspec.yaml	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ b/axiom/pubspec.yaml	(date 1770097150894)
+@@ -19,7 +19,7 @@
+ version: 1.0.0+1
+ 
+ environment:
+-  sdk: ^3.10.3
++  sdk: ^3.6.0
+ 
+ # Dependencies specify other packages that your package needs in order to work.
+ # To automatically upgrade your package dependencies to the latest versions
+@@ -62,7 +62,7 @@
+   # activated in the `analysis_options.yaml` file located at the root of your
+   # package. See that file for information about deactivating specific lint
+   # rules and activating additional ones.
+-  flutter_lints: ^6.0.0
++  flutter_lints: ^5.0.0
+ 
+ # For information on the generic Dart part of this file, see the
+ # following page: https://dart.dev/tools/pub/pubspec
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ /dev/null	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
+@@ -1,9 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/axiom.iml" filepath="$PROJECT_DIR$/axiom.iml" />
+-      <module fileurl="file://$PROJECT_DIR$/android/axiom_android.iml" filepath="$PROJECT_DIR$/android/axiom_android.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: axiom.iml
+===================================================================
+diff --git a/axiom.iml b/axiom.iml
+deleted file mode 100644
+--- a/axiom.iml	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ /dev/null	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
+@@ -1,17 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+-    <exclude-output />
+-    <content url="file://$MODULE_DIR$">
+-      <excludeFolder url="file://$MODULE_DIR$/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/build" />
+-      <excludeFolder url="file://$MODULE_DIR$/axiom/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/axiom/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/axiom/build" />
+-    </content>
+-    <orderEntry type="sourceFolder" forTests="false" />
+-    <orderEntry type="library" name="Dart SDK" level="project" />
+-    <orderEntry type="library" name="Dart Packages" level="project" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: android/axiom_android.iml
+===================================================================
+diff --git a/android/axiom_android.iml b/android/axiom_android.iml
+deleted file mode 100644
+--- a/android/axiom_android.iml	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ /dev/null	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
+@@ -1,29 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4">
+-  <component name="FacetManager">
+-    <facet type="android" name="Android">
+-      <configuration>
+-        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+-        <option name="GEN_FOLDER_RELATIVE_PATH_APT" value="/gen" />
+-        <option name="GEN_FOLDER_RELATIVE_PATH_AIDL" value="/gen" />
+-        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/app/src/main/AndroidManifest.xml" />
+-        <option name="RES_FOLDER_RELATIVE_PATH" value="/app/src/main/res" />
+-        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/app/src/main/assets" />
+-        <option name="LIBS_FOLDER_RELATIVE_PATH" value="/app/src/main/libs" />
+-        <option name="PROGUARD_LOGS_FOLDER_RELATIVE_PATH" value="/app/src/main/proguard_logs" />
+-      </configuration>
+-    </facet>
+-  </component>
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+-    <exclude-output />
+-    <content url="file://$MODULE_DIR$">
+-      <sourceFolder url="file://$MODULE_DIR$/app/src/main/java" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/app/src/main/kotlin" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
+-    </content>
+-    <orderEntry type="jdk" jdkName="Android API 24 Platform" jdkType="Android SDK" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-    <orderEntry type="library" name="Flutter for Android" level="project" />
+-    <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/misc.xml
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+--- a/.idea/misc.xml	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ /dev/null	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectRootManager">
+-    <output url="file://$PROJECT_DIR$/out" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+deleted file mode 100644
+--- a/.idea/workspace.xml	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ /dev/null	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
+@@ -1,56 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="NONE" />
+-  </component>
+-  <component name="ChangeListManager">
+-    <list default="true" id="c7d0d24b-a277-4c9b-bdc3-868b3901d6a8" name="Changes" comment="" />
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="ClangdSettings">
+-    <option name="formatViaClangd" value="false" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Dart File" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 1
+-}]]></component>
+-  <component name="ProjectId" id="37Vsmehe0378Q5gwSdJ2UAudFTW" />
+-  <component name="ProjectViewState">
+-    <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.cidr.known.project.marker": "true",
+-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+-    "cf.first.check.clang-format": "false",
+-    "cidr.known.project.marker": "true",
+-    "dart.analysis.tool.window.visible": "false",
+-    "io.flutter.project.isFirstOpen": "true",
+-    "kotlin-language-version-configured": "true",
+-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+-    "show.migrate.to.gradle.popup": "false"
+-  }
+-}]]></component>
+-  <component name="TaskManager">
+-    <task active="true" id="Default" summary="Default task">
+-      <changelist id="c7d0d24b-a277-4c9b-bdc3-868b3901d6a8" name="Changes" comment="" />
+-      <created>1766999754657</created>
+-      <option name="number" value="Default" />
+-      <option name="presentableId" value="Default" />
+-      <updated>1766999754657</updated>
+-    </task>
+-    <servers />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/runConfigurations/main_dart.xml
+===================================================================
+diff --git a/.idea/runConfigurations/main_dart.xml b/.idea/runConfigurations/main_dart.xml
+deleted file mode 100644
+--- a/.idea/runConfigurations/main_dart.xml	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ /dev/null	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
+@@ -1,6 +0,0 @@
+-<component name="ProjectRunConfigurationManager">
+-  <configuration default="false" name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+-    <option name="filePath" value="$PROJECT_DIR$/axiom/lib/main.dart" />
+-    <method v="2" />
+-  </configuration>
+-</component>
+\ No newline at end of file
+Index: axiom/lib/screens/APIManagementScreen.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nimport 'package:flutter/material.dart';\r\nimport 'package:provider/provider.dart';\r\nimport '../../providers/ApiProvider.dart';\r\nimport '../Library/CommonWidgets/APICard.dart';\r\nimport '../Library/Utils.dart';\r\n\r\nclass APIManagementScreen extends StatelessWidget {\r\n  const APIManagementScreen({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    // Load APIs when screen is first built\r\n    WidgetsBinding.instance.addPostFrameCallback((_) {\r\n      context.read<ApiProvider>().loadAPIs();\r\n    });\r\n\r\n    return Scaffold(\r\n      appBar: AppBar(\r\n        title: const Text('API Management'),\r\n        actions: [\r\n          IconButton(\r\n            icon: const Icon(Icons.add),\r\n            onPressed: () => Utils().showAddAPIDialog(context),\r\n          ),\r\n        ],\r\n      ),\r\n      body: Consumer<ApiProvider>(\r\n        builder: (context, apiProvider, child) {\r\n          if (apiProvider.isLoading) {\r\n            return const Center(child: CircularProgressIndicator());\r\n          }\r\n\r\n          if (apiProvider.endpoints.isEmpty) {\r\n            return Utils().buildEmptyState(context,'api');\r\n          }\r\n\r\n          return ListView.builder(\r\n            padding: const EdgeInsets.all(16),\r\n            itemCount: apiProvider.endpoints.length,\r\n            itemBuilder: (context, index) {\r\n              return APICard(\r\n                endpoint: apiProvider.endpoints[index],\r\n                onEdit: () => Utils().showEditAPIDialog(\r\n                  context,\r\n                  apiProvider.endpoints[index],\r\n                ),\r\n                onDelete: () => Utils().deleteAPI(\r\n                  context,\r\n                  apiProvider.endpoints[index],\r\n                ),\r\n                onTest: () => Utils().testAPI(\r\n                  context,\r\n                  apiProvider.endpoints[index],\r\n                ),\r\n              );\r\n            },\r\n          );\r\n        },\r\n      ),\r\n    );\r\n  }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/axiom/lib/screens/APIManagementScreen.dart b/axiom/lib/screens/APIManagementScreen.dart
+--- a/axiom/lib/screens/APIManagementScreen.dart	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ b/axiom/lib/screens/APIManagementScreen.dart	(date 1769512098481)
+@@ -1,9 +1,11 @@
+-
+ import 'package:flutter/material.dart';
+ import 'package:provider/provider.dart';
+ import '../../providers/ApiProvider.dart';
+ import '../Library/CommonWidgets/APICard.dart';
+ import '../Library/Utils.dart';
++import '../widgets/ai_api_creator.dart';
++import '../../models/ApiEndpointmodel.dart';
++import '../../models/ApiFieldModel.dart';
+ 
+ class APIManagementScreen extends StatelessWidget {
+   const APIManagementScreen({super.key});
+@@ -19,6 +21,33 @@
+       appBar: AppBar(
+         title: const Text('API Management'),
+         actions: [
++          // AI Creator Button
++          IconButton(
++            icon: const Icon(Icons.auto_awesome),
++            onPressed: () async {
++              final result = await showDialog<Map<String, dynamic>>(
++                context: context,
++                builder: (context) => const AIApiCreatorDialog(),
++              );
++
++              if (result != null && context.mounted) {
++                // Convert AI config to ApiEndpoint and create it
++                final apiEndpoint = _convertAIConfigToApiEndpoint(result);
++                final success = await context.read<ApiProvider>().createAPI(apiEndpoint);
++
++                if (context.mounted) {
++                  ScaffoldMessenger.of(context).showSnackBar(
++                    SnackBar(
++                      content: Text(
++                        success ? '✅ AI-generated API created successfully' : '❌ Failed to create API',
++                      ),
++                    ),
++                  );
++                }
++              }
++            },
++            tooltip: 'Create API with AI',
++          ),
+           IconButton(
+             icon: const Icon(Icons.add),
+             onPressed: () => Utils().showAddAPIDialog(context),
+@@ -60,4 +89,50 @@
+       ),
+     );
+   }
++
++  // Helper method to convert AI config to ApiEndpoint
++  ApiEndpoint _convertAIConfigToApiEndpoint(Map<String, dynamic> config) {
++    return ApiEndpoint(
++      id: DateTime.now().millisecondsSinceEpoch.toString(),
++      name: config['name'] ?? 'Generated API',
++      method: config['method'] ?? 'POST',
++      path: config['path'] ?? '/api/generated',
++      purpose: config['purpose'] ?? 'create',
++      collectionName: config['collection'] ?? 'generated_data',
++      auth: config['auth'] ?? false,
++      fields: (config['fields'] as List<dynamic>?)?.map((field) {
++        return ApiField(
++          name: field['name'] ?? '',
++          type: _mapFieldType(field['type'] ?? 'string'),
++          required: field['required'] ?? false,
++          description: field['description'] ?? '',
++        );
++      }).toList() ?? [],
++    );
++  }
++
++  // Helper method to map AI field types to ApiField types
++  String _mapFieldType(String aiType) {
++    switch (aiType.toLowerCase()) {
++      case 'email':
++      case 'phone':
++      case 'password':
++      case 'url':
++        return 'String';
++      case 'number':
++      case 'integer':
++        return 'Number';
++      case 'boolean':
++      case 'bool':
++        return 'Boolean';
++      case 'date':
++        return 'Date';
++      case 'array':
++        return 'Array';
++      case 'object':
++        return 'Object';
++      default:
++        return 'String';
++    }
++  }
+ }
+\ No newline at end of file
+Index: axiomBackend/.env
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>PORT=5000\r\nMONGODB_URI=mongodb+srv://aasheeta:rtyfgho;@users.mdpvhwc.mongodb.net/\r\nJWT_SECRET=axiomjwtaxiomjwtaxiomjwtaxiomjwt\r\nOPENAI_API_KEY=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\r\nNODE_ENV=development\r\nFRONTEND_URL=http://localhost:61890
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/axiomBackend/.env b/axiomBackend/.env
+--- a/axiomBackend/.env	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ b/axiomBackend/.env	(date 1769511747022)
+@@ -1,6 +1,5 @@
+ PORT=5000
+ MONGODB_URI=mongodb+srv://aasheeta:rtyfgho;@users.mdpvhwc.mongodb.net/
+ JWT_SECRET=axiomjwtaxiomjwtaxiomjwtaxiomjwt
+-OPENAI_API_KEY=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
+ NODE_ENV=development
+-FRONTEND_URL=http://localhost:61890
+\ No newline at end of file
++FRONTEND_URL=http://localhost:8080
+\ No newline at end of file
+Index: axiom/lib/services/FormHandler.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nimport 'dart:convert';\r\nimport 'package:flutter/material.dart';\r\nimport 'package:http/http.dart' as http;\r\nimport '../models/widget_model.dart';\r\n\r\nclass FormHandler {\r\n  static final Map<String, TextEditingController> _controllers = {};\r\n  static final Map<String, dynamic> _formData = {};\r\n\r\n  // Initialize controllers for form fields\r\n  static void initializeForm(List<WidgetModel> widgets) {\r\n    _controllers.clear();\r\n    _formData.clear();\r\n\r\n    for (var widget in widgets) {\r\n      if (widget.type == 'TextField') {\r\n        final fieldKey = widget.properties['fieldKey'] ?? widget.id;\r\n        _controllers[fieldKey] = TextEditingController();\r\n      }\r\n    }\r\n  }\r\n\r\n  // Get controller for a specific field\r\n  static TextEditingController? getController(String key) {\r\n    return _controllers[key];\r\n  }\r\n\r\n  // Collect all form data\r\n  static Map<String, dynamic> collectFormData() {\r\n    _formData.clear();\r\n\r\n    _controllers.forEach((key, controller) {\r\n      _formData[key] = controller.text;\r\n    });\r\n\r\n    return Map.from(_formData);\r\n  }\r\n\r\n  // Validate form fields\r\n  static bool validateForm(List<WidgetModel> widgets) {\r\n    bool isValid = true;\r\n\r\n    for (var widget in widgets) {\r\n      if (widget.type == 'TextField') {\r\n        final fieldKey = widget.properties['fieldKey'] ?? widget.id;\r\n        final isRequired = widget.properties['required'] ?? false;\r\n        final controller = _controllers[fieldKey];\r\n\r\n        if (isRequired && (controller == null || controller.text.isEmpty)) {\r\n          isValid = false;\r\n          break;\r\n        }\r\n      }\r\n    }\r\n\r\n    return isValid;\r\n  }\r\n\r\n  // Submit form to API\r\n  static Future<Map<String, dynamic>> submitForm({\r\n    required String apiUrl,\r\n    required String method,\r\n    Map<String, String>? headers,\r\n    Map<String, dynamic>? additionalData,\r\n  }) async {\r\n    try {\r\n      final formData = collectFormData();\r\n\r\n      // Merge with additional data\r\n      final payload = {...formData, ...?additionalData};\r\n\r\n      final uri = Uri.parse(apiUrl);\r\n      http.Response response;\r\n\r\n      final requestHeaders = {\r\n        'Content-Type': 'application/json',\r\n        ...?headers,\r\n      };\r\n\r\n      switch (method.toUpperCase()) {\r\n        case 'POST':\r\n          response = await http.post(\r\n            uri,\r\n            headers: requestHeaders,\r\n            body: json.encode(payload),\r\n          );\r\n          break;\r\n        case 'PUT':\r\n          response = await http.put(\r\n            uri,\r\n            headers: requestHeaders,\r\n            body: json.encode(payload),\r\n          );\r\n          break;\r\n        case 'DELETE':\r\n          response = await http.delete(\r\n            uri,\r\n            headers: requestHeaders,\r\n            body: json.encode(payload),\r\n          );\r\n          break;\r\n        case 'GET':\r\n        default:\r\n        // For GET, convert payload to query parameters\r\n          final queryParams = payload.map((key, value) => MapEntry(key, value.toString()));\r\n          final uriWithParams = uri.replace(queryParameters: queryParams);\r\n          response = await http.get(uriWithParams, headers: requestHeaders);\r\n          break;\r\n      }\r\n\r\n      if (response.statusCode >= 200 && response.statusCode < 300) {\r\n        return {\r\n          'success': true,\r\n          'data': json.decode(response.body),\r\n          'statusCode': response.statusCode,\r\n        };\r\n      } else {\r\n        return {\r\n          'success': false,\r\n          'error': 'Request failed with status ${response.statusCode}',\r\n          'statusCode': response.statusCode,\r\n        };\r\n      }\r\n    } catch (e) {\r\n      return {\r\n        'success': false,\r\n        'error': e.toString(),\r\n      };\r\n    }\r\n  }\r\n\r\n  // Clear all form fields\r\n  static void clearForm() {\r\n    _controllers.forEach((key, controller) {\r\n      controller.clear();\r\n    });\r\n    _formData.clear();\r\n  }\r\n\r\n  // Dispose all controllers\r\n  static void dispose() {\r\n    _controllers.forEach((key, controller) {\r\n      controller.dispose();\r\n    });\r\n    _controllers.clear();\r\n    _formData.clear();\r\n  }\r\n}\r\n\r\n// Form Widget Builder\r\nclass FormBuilder extends StatefulWidget {\r\n  final List<WidgetModel> formWidgets;\r\n  final String? submitUrl;\r\n  final String submitMethod;\r\n  final VoidCallback? onSuccess;\r\n  final Function(String)? onError;\r\n\r\n  const FormBuilder({\r\n    super.key,\r\n    required this.formWidgets,\r\n    this.submitUrl,\r\n    this.submitMethod = 'POST',\r\n    this.onSuccess,\r\n    this.onError,\r\n  });\r\n\r\n  @override\r\n  State<FormBuilder> createState() => _FormBuilderState();\r\n}\r\n\r\nclass _FormBuilderState extends State<FormBuilder> {\r\n  bool _isSubmitting = false;\r\n\r\n  @override\r\n  void initState() {\r\n    super.initState();\r\n    FormHandler.initializeForm(widget.formWidgets);\r\n  }\r\n\r\n  @override\r\n  void dispose() {\r\n    FormHandler.dispose();\r\n    super.dispose();\r\n  }\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Column(\r\n      children: [\r\n        ...widget.formWidgets.map((widget) => _buildFormWidget(widget)),\r\n        const SizedBox(height: 24),\r\n        SizedBox(\r\n          width: double.infinity,\r\n          child: ElevatedButton(\r\n            onPressed: _isSubmitting ? null : _handleSubmit,\r\n            style: ElevatedButton.styleFrom(\r\n              padding: const EdgeInsets.symmetric(vertical: 16),\r\n            ),\r\n            child: _isSubmitting\r\n                ? const SizedBox(\r\n              height: 20,\r\n              width: 20,\r\n              child: CircularProgressIndicator(strokeWidth: 2),\r\n            )\r\n                : const Text('Submit'),\r\n          ),\r\n        ),\r\n      ],\r\n    );\r\n  }\r\n\r\n  Widget _buildFormWidget(WidgetModel widget) {\r\n    switch (widget.type) {\r\n      case 'TextField':\r\n        final fieldKey = widget.properties['fieldKey'] ?? widget.id;\r\n        final controller = FormHandler.getController(fieldKey);\r\n\r\n        return Padding(\r\n          padding: const EdgeInsets.only(bottom: 16),\r\n          child: TextField(\r\n            controller: controller,\r\n            decoration: InputDecoration(\r\n              labelText: widget.properties['label'] ?? '',\r\n              hintText: widget.properties['hint'] ?? '',\r\n              border: const OutlineInputBorder(),\r\n            ),\r\n            obscureText: widget.properties['obscureText'] ?? false,\r\n          ),\r\n        );\r\n\r\n      case 'Text':\r\n        return Padding(\r\n          padding: const EdgeInsets.only(bottom: 8),\r\n          child: Text(\r\n            widget.properties['text'] ?? '',\r\n            style: TextStyle(\r\n              fontSize: widget.properties['fontSize']?.toDouble() ?? 16,\r\n              fontWeight: widget.properties['fontWeight'] == 'bold'\r\n                  ? FontWeight.bold\r\n                  : FontWeight.normal,\r\n            ),\r\n          ),\r\n        );\r\n\r\n      default:\r\n        return const SizedBox.shrink();\r\n    }\r\n  }\r\n\r\n  Future<void> _handleSubmit() async {\r\n    if (!FormHandler.validateForm(widget.formWidgets)) {\r\n      ScaffoldMessenger.of(context).showSnackBar(\r\n        const SnackBar(content: Text('Please fill all required fields')),\r\n      );\r\n      return;\r\n    }\r\n\r\n    if (widget.submitUrl == null) {\r\n      ScaffoldMessenger.of(context).showSnackBar(\r\n        const SnackBar(content: Text('No submit URL configured')),\r\n      );\r\n      return;\r\n    }\r\n\r\n    setState(() => _isSubmitting = true);\r\n\r\n    final result = await FormHandler.submitForm(\r\n      apiUrl: widget.submitUrl!,\r\n      method: widget.submitMethod,\r\n    );\r\n\r\n    setState(() => _isSubmitting = false);\r\n\r\n    if (result['success'] == true) {\r\n      if (widget.onSuccess != null) {\r\n        widget.onSuccess!();\r\n      } else {\r\n        if (mounted) {\r\n          ScaffoldMessenger.of(context).showSnackBar(\r\n            const SnackBar(\r\n              content: Text('✅ Form submitted successfully'),\r\n              backgroundColor: Colors.green,\r\n            ),\r\n          );\r\n        }\r\n      }\r\n      FormHandler.clearForm();\r\n    } else {\r\n      final error = result['error'] ?? 'Unknown error';\r\n      if (widget.onError != null) {\r\n        widget.onError!(error);\r\n      } else {\r\n        if (mounted) {\r\n          ScaffoldMessenger.of(context).showSnackBar(\r\n            SnackBar(\r\n              content: Text('❌ Error: $error'),\r\n              backgroundColor: Colors.red,\r\n            ),\r\n          );\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n// Form Preview Dialog\r\nclass FormPreviewDialog extends StatelessWidget {\r\n  final List<WidgetModel> formWidgets;\r\n  final String? submitUrl;\r\n  final String submitMethod;\r\n\r\n  const FormPreviewDialog({\r\n    super.key,\r\n    required this.formWidgets,\r\n    this.submitUrl,\r\n    this.submitMethod = 'POST',\r\n  });\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Dialog(\r\n      child: Container(\r\n        width: 500,\r\n        constraints: const BoxConstraints(maxHeight: 700),\r\n        padding: const EdgeInsets.all(24),\r\n        child: Column(\r\n          mainAxisSize: MainAxisSize.min,\r\n          children: [\r\n            Row(\r\n              mainAxisAlignment: MainAxisAlignment.spaceBetween,\r\n              children: [\r\n                const Text(\r\n                  'Form Preview',\r\n                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),\r\n                ),\r\n                IconButton(\r\n                  icon: const Icon(Icons.close),\r\n                  onPressed: () => Navigator.pop(context),\r\n                ),\r\n              ],\r\n            ),\r\n            const Divider(),\r\n            Flexible(\r\n              child: SingleChildScrollView(\r\n                child: FormBuilder(\r\n                  formWidgets: formWidgets,\r\n                  submitUrl: submitUrl,\r\n                  submitMethod: submitMethod,\r\n                  onSuccess: () {\r\n                    Navigator.pop(context);\r\n                    ScaffoldMessenger.of(context).showSnackBar(\r\n                      const SnackBar(\r\n                        content: Text('✅ Form submitted successfully!'),\r\n                        backgroundColor: Colors.green,\r\n                      ),\r\n                    );\r\n                  },\r\n                  onError: (error) {\r\n                    ScaffoldMessenger.of(context).showSnackBar(\r\n                      SnackBar(\r\n                        content: Text('❌ Error: $error'),\r\n                        backgroundColor: Colors.red,\r\n                      ),\r\n                    );\r\n                  },\r\n                ),\r\n              ),\r\n            ),\r\n          ],\r\n        ),\r\n      ),\r\n    );\r\n  }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/axiom/lib/services/FormHandler.dart b/axiom/lib/services/FormHandler.dart
+--- a/axiom/lib/services/FormHandler.dart	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ b/axiom/lib/services/FormHandler.dart	(date 1769513536377)
+@@ -1,17 +1,21 @@
+-
+ import 'dart:convert';
+ import 'package:flutter/material.dart';
+ import 'package:http/http.dart' as http;
+ import '../models/widget_model.dart';
++import 'validation_service.dart';
+ 
+ class FormHandler {
+   static final Map<String, TextEditingController> _controllers = {};
+   static final Map<String, dynamic> _formData = {};
++  static Map<String, ValidationResult> _validationResults = {};
++  static bool _isFormValid = true;
+ 
+   // Initialize controllers for form fields
+   static void initializeForm(List<WidgetModel> widgets) {
+     _controllers.clear();
+     _formData.clear();
++    _validationResults.clear();
++    _isFormValid = true;
+ 
+     for (var widget in widgets) {
+       if (widget.type == 'TextField') {
+@@ -145,7 +149,114 @@
+     });
+     _controllers.clear();
+     _formData.clear();
++    _validationResults.clear();
+   }
++
++  // Smart form validation
++  static Future<FormValidationResult> validateFormSmartly(
++    List<WidgetModel> widgets,
++    Map<String, dynamic> formData,
++  ) async {
++    try {
++      final formContext = {
++        'fieldTypes': _extractFieldTypes(widgets),
++        'requiredFields': _extractRequiredFields(widgets),
++      };
++
++      final result = await ValidationService.validateForm(
++        formData: formData,
++        formContext: formContext,
++      );
++
++      // Update validation results
++      _validationResults = result.fieldResults;
++      _isFormValid = result.isValid;
++
++      return result;
++    } catch (e) {
++      print('Smart validation error: $e');
++      // Fallback to basic validation
++      return _fallbackValidation(widgets, formData);
++    }
++  }
++
++  static Map<String, String> _extractFieldTypes(List<WidgetModel> widgets) {
++    final fieldTypes = <String, String>{};
++    
++    for (var widget in widgets) {
++      if (widget.type == 'TextField') {
++        final fieldKey = widget.properties['fieldKey'] ?? widget.id;
++        final fieldType = widget.properties['fieldType'] ?? 'text';
++        fieldTypes[fieldKey] = fieldType;
++      }
++    }
++    
++    return fieldTypes;
++  }
++
++  static List<String> _extractRequiredFields(List<WidgetModel> widgets) {
++    final requiredFields = <String>[];
++    
++    for (var widget in widgets) {
++      if (widget.type == 'TextField') {
++        final fieldKey = widget.properties['fieldKey'] ?? widget.id;
++        final isRequired = widget.properties['required'] ?? false;
++        if (isRequired) {
++          requiredFields.add(fieldKey);
++        }
++      }
++    }
++    
++    return requiredFields;
++  }
++
++  static FormValidationResult _fallbackValidation(
++    List<WidgetModel> widgets,
++    Map<String, dynamic> formData,
++  ) {
++    final errors = <ValidationError>[];
++    final fieldResults = <String, ValidationResult>{};
++
++    for (var widget in widgets) {
++      if (widget.type == 'TextField') {
++        final fieldKey = widget.properties['fieldKey'] ?? widget.id;
++        final value = formData[fieldKey] ?? '';
++        final isRequired = widget.properties['required'] ?? false;
++
++        final validation = ValidationResult(
++          isValid: !isRequired || value.isNotEmpty,
++          errorMessage: isRequired && value.isEmpty ? 'This field is required' : null,
++          suggestions: [],
++          confidence: 0.5,
++        );
++
++        fieldResults[fieldKey] = validation;
++        
++        if (!validation.isValid) {
++          errors.add(ValidationError(
++            field: fieldKey,
++            message: validation.errorMessage!,
++            suggestions: [],
++          ));
++        }
++      }
++    }
++
++    return FormValidationResult(
++      isValid: errors.isEmpty,
++      errors: errors,
++      fieldResults: fieldResults,
++      confidence: 0.5,
++    );
++  }
++
++  // Get validation result for a specific field
++  static ValidationResult? getFieldValidation(String fieldKey) {
++    return _validationResults[fieldKey];
++  }
++
++  // Check if entire form is valid
++  static bool get isFormValid => _isFormValid;
+ }
+ 
+ // Form Widget Builder
+Index: axiom/pubspec.lock
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Generated by pub\r\n# See https://dart.dev/tools/pub/glossary#lockfile\r\npackages:\r\n  _fe_analyzer_shared:\r\n    dependency: transitive\r\n    description:\r\n      name: _fe_analyzer_shared\r\n      sha256: \"5b7468c326d2f8a4f630056404ca0d291ade42918f4a3c6233618e724f39da8e\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"92.0.0\"\r\n  analyzer:\r\n    dependency: transitive\r\n    description:\r\n      name: analyzer\r\n      sha256: \"70e4b1ef8003c64793a9e268a551a82869a8a96f39deb73dea28084b0e8bf75e\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"9.0.0\"\r\n  args:\r\n    dependency: transitive\r\n    description:\r\n      name: args\r\n      sha256: d0481093c50b1da8910eb0bb301626d4d8eb7284aa739614d2b394ee09e3ea04\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.7.0\"\r\n  async:\r\n    dependency: transitive\r\n    description:\r\n      name: async\r\n      sha256: \"758e6d74e971c3e5aceb4110bfd6698efc7f501675bcfe0c775459a8140750eb\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.13.0\"\r\n  boolean_selector:\r\n    dependency: transitive\r\n    description:\r\n      name: boolean_selector\r\n      sha256: \"8aab1771e1243a5063b8b0ff68042d67334e3feab9e95b9490f9a6ebf73b42ea\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.1.2\"\r\n  build:\r\n    dependency: transitive\r\n    description:\r\n      name: build\r\n      sha256: c1668065e9ba04752570ad7e038288559d1e2ca5c6d0131c0f5f55e39e777413\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"4.0.3\"\r\n  build_config:\r\n    dependency: transitive\r\n    description:\r\n      name: build_config\r\n      sha256: \"4f64382b97504dc2fcdf487d5aae33418e08b4703fc21249e4db6d804a4d0187\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.2.0\"\r\n  build_daemon:\r\n    dependency: transitive\r\n    description:\r\n      name: build_daemon\r\n      sha256: bf05f6e12cfea92d3c09308d7bcdab1906cd8a179b023269eed00c071004b957\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"4.1.1\"\r\n  build_runner:\r\n    dependency: \"direct dev\"\r\n    description:\r\n      name: build_runner\r\n      sha256: \"110c56ef29b5eb367b4d17fc79375fa8c18a6cd7acd92c05bb3986c17a079057\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.10.4\"\r\n  built_collection:\r\n    dependency: transitive\r\n    description:\r\n      name: built_collection\r\n      sha256: \"376e3dd27b51ea877c28d525560790aee2e6fbb5f20e2f85d5081027d94e2100\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"5.1.1\"\r\n  built_value:\r\n    dependency: transitive\r\n    description:\r\n      name: built_value\r\n      sha256: \"426cf75afdb23aa74bd4e471704de3f9393f3c7b04c1e2d9c6f1073ae0b8b139\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"8.12.1\"\r\n  characters:\r\n    dependency: transitive\r\n    description:\r\n      name: characters\r\n      sha256: f71061c654a3380576a52b451dd5532377954cf9dbd272a78fc8479606670803\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.4.0\"\r\n  checked_yaml:\r\n    dependency: transitive\r\n    description:\r\n      name: checked_yaml\r\n      sha256: \"959525d3162f249993882720d52b7e0c833978df229be20702b33d48d91de70f\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.0.4\"\r\n  clock:\r\n    dependency: transitive\r\n    description:\r\n      name: clock\r\n      sha256: fddb70d9b5277016c77a80201021d40a2247104d9f4aa7bab7157b7e3f05b84b\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.1.2\"\r\n  code_builder:\r\n    dependency: transitive\r\n    description:\r\n      name: code_builder\r\n      sha256: \"11654819532ba94c34de52ff5feb52bd81cba1de00ef2ed622fd50295f9d4243\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"4.11.0\"\r\n  collection:\r\n    dependency: transitive\r\n    description:\r\n      name: collection\r\n      sha256: \"2f5709ae4d3d59dd8f7cd309b4e023046b57d8a6c82130785d2b0e5868084e76\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.19.1\"\r\n  convert:\r\n    dependency: transitive\r\n    description:\r\n      name: convert\r\n      sha256: b30acd5944035672bc15c6b7a8b47d773e41e2f17de064350988c5d02adb1c68\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"3.1.2\"\r\n  crypto:\r\n    dependency: transitive\r\n    description:\r\n      name: crypto\r\n      sha256: c8ea0233063ba03258fbcf2ca4d6dadfefe14f02fab57702265467a19f27fadf\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"3.0.7\"\r\n  cupertino_icons:\r\n    dependency: \"direct main\"\r\n    description:\r\n      name: cupertino_icons\r\n      sha256: ba631d1c7f7bef6b729a622b7b752645a2d076dba9976925b8f25725a30e1ee6\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.0.8\"\r\n  dart_style:\r\n    dependency: transitive\r\n    description:\r\n      name: dart_style\r\n      sha256: a9c30492da18ff84efe2422ba2d319a89942d93e58eb0b73d32abe822ef54b7b\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"3.1.3\"\r\n  dio:\r\n    dependency: \"direct main\"\r\n    description:\r\n      name: dio\r\n      sha256: d90ee57923d1828ac14e492ca49440f65477f4bb1263575900be731a3dac66a9\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"5.9.0\"\r\n  dio_web_adapter:\r\n    dependency: transitive\r\n    description:\r\n      name: dio_web_adapter\r\n      sha256: \"7586e476d70caecaf1686d21eee7247ea43ef5c345eab9e0cc3583ff13378d78\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.1.1\"\r\n  fake_async:\r\n    dependency: transitive\r\n    description:\r\n      name: fake_async\r\n      sha256: \"5368f224a74523e8d2e7399ea1638b37aecfca824a3cc4dfdf77bf1fa905ac44\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.3.3\"\r\n  ffi:\r\n    dependency: transitive\r\n    description:\r\n      name: ffi\r\n      sha256: \"289279317b4b16eb2bb7e271abccd4bf84ec9bdcbe999e278a94b804f5630418\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.1.4\"\r\n  file:\r\n    dependency: transitive\r\n    description:\r\n      name: file\r\n      sha256: a3b4f84adafef897088c160faf7dfffb7696046cb13ae90b508c2cbc95d3b8d4\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"7.0.1\"\r\n  fixnum:\r\n    dependency: transitive\r\n    description:\r\n      name: fixnum\r\n      sha256: b6dc7065e46c974bc7c5f143080a6764ec7a4be6da1285ececdc37be96de53be\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.1.1\"\r\n  flutter:\r\n    dependency: \"direct main\"\r\n    description: flutter\r\n    source: sdk\r\n    version: \"0.0.0\"\r\n  flutter_colorpicker:\r\n    dependency: \"direct main\"\r\n    description:\r\n      name: flutter_colorpicker\r\n      sha256: \"969de5f6f9e2a570ac660fb7b501551451ea2a1ab9e2097e89475f60e07816ea\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.1.0\"\r\n  flutter_lints:\r\n    dependency: \"direct dev\"\r\n    description:\r\n      name: flutter_lints\r\n      sha256: \"3105dc8492f6183fb076ccf1f351ac3d60564bff92e20bfc4af9cc1651f4e7e1\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"6.0.0\"\r\n  flutter_svg:\r\n    dependency: \"direct main\"\r\n    description:\r\n      name: flutter_svg\r\n      sha256: \"87fbd7c534435b6c5d9d98b01e1fd527812b82e68ddd8bd35fc45ed0fa8f0a95\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.2.3\"\r\n  flutter_test:\r\n    dependency: \"direct dev\"\r\n    description: flutter\r\n    source: sdk\r\n    version: \"0.0.0\"\r\n  flutter_web_plugins:\r\n    dependency: transitive\r\n    description: flutter\r\n    source: sdk\r\n    version: \"0.0.0\"\r\n  glob:\r\n    dependency: transitive\r\n    description:\r\n      name: glob\r\n      sha256: c3f1ee72c96f8f78935e18aa8cecced9ab132419e8625dc187e1c2408efc20de\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.1.3\"\r\n  google_fonts:\r\n    dependency: \"direct main\"\r\n    description:\r\n      name: google_fonts\r\n      sha256: ba03d03bcaa2f6cb7bd920e3b5027181db75ab524f8891c8bc3aa603885b8055\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"6.3.3\"\r\n  graphs:\r\n    dependency: transitive\r\n    description:\r\n      name: graphs\r\n      sha256: \"741bbf84165310a68ff28fe9e727332eef1407342fca52759cb21ad8177bb8d0\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.3.2\"\r\n  http:\r\n    dependency: \"direct main\"\r\n    description:\r\n      name: http\r\n      sha256: \"87721a4a50b19c7f1d49001e51409bddc46303966ce89a65af4f4e6004896412\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.6.0\"\r\n  http_multi_server:\r\n    dependency: transitive\r\n    description:\r\n      name: http_multi_server\r\n      sha256: aa6199f908078bb1c5efb8d8638d4ae191aac11b311132c3ef48ce352fb52ef8\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"3.2.2\"\r\n  http_parser:\r\n    dependency: transitive\r\n    description:\r\n      name: http_parser\r\n      sha256: \"178d74305e7866013777bab2c3d8726205dc5a4dd935297175b19a23a2e66571\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"4.1.2\"\r\n  io:\r\n    dependency: transitive\r\n    description:\r\n      name: io\r\n      sha256: dfd5a80599cf0165756e3181807ed3e77daf6dd4137caaad72d0b7931597650b\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.0.5\"\r\n  js:\r\n    dependency: transitive\r\n    description:\r\n      name: js\r\n      sha256: f2c445dce49627136094980615a031419f7f3eb393237e4ecd97ac15dea343f3\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"0.6.7\"\r\n  json_annotation:\r\n    dependency: \"direct main\"\r\n    description:\r\n      name: json_annotation\r\n      sha256: \"1ce844379ca14835a50d2f019a3099f419082cfdd231cd86a142af94dd5c6bb1\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"4.9.0\"\r\n  json_serializable:\r\n    dependency: \"direct dev\"\r\n    description:\r\n      name: json_serializable\r\n      sha256: \"6b253f7851cf1626a05c8b49c792e04a14897349798c03798137f2b5f7e0b5b1\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"6.11.3\"\r\n  leak_tracker:\r\n    dependency: transitive\r\n    description:\r\n      name: leak_tracker\r\n      sha256: \"33e2e26bdd85a0112ec15400c8cbffea70d0f9c3407491f672a2fad47915e2de\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"11.0.2\"\r\n  leak_tracker_flutter_testing:\r\n    dependency: transitive\r\n    description:\r\n      name: leak_tracker_flutter_testing\r\n      sha256: \"1dbc140bb5a23c75ea9c4811222756104fbcd1a27173f0c34ca01e16bea473c1\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"3.0.10\"\r\n  leak_tracker_testing:\r\n    dependency: transitive\r\n    description:\r\n      name: leak_tracker_testing\r\n      sha256: \"8d5a2d49f4a66b49744b23b018848400d23e54caf9463f4eb20df3eb8acb2eb1\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"3.0.2\"\r\n  lints:\r\n    dependency: transitive\r\n    description:\r\n      name: lints\r\n      sha256: a5e2b223cb7c9c8efdc663ef484fdd95bb243bff242ef5b13e26883547fce9a0\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"6.0.0\"\r\n  logging:\r\n    dependency: transitive\r\n    description:\r\n      name: logging\r\n      sha256: c8245ada5f1717ed44271ed1c26b8ce85ca3228fd2ffdb75468ab01979309d61\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.3.0\"\r\n  matcher:\r\n    dependency: transitive\r\n    description:\r\n      name: matcher\r\n      sha256: dc58c723c3c24bf8d3e2d3ad3f2f9d7bd9cf43ec6feaa64181775e60190153f2\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"0.12.17\"\r\n  material_color_utilities:\r\n    dependency: transitive\r\n    description:\r\n      name: material_color_utilities\r\n      sha256: f7142bb1154231d7ea5f96bc7bde4bda2a0945d2806bb11670e30b850d56bdec\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"0.11.1\"\r\n  meta:\r\n    dependency: transitive\r\n    description:\r\n      name: meta\r\n      sha256: \"23f08335362185a5ea2ad3a4e597f1375e78bce8a040df5c600c8d3552ef2394\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.17.0\"\r\n  mime:\r\n    dependency: transitive\r\n    description:\r\n      name: mime\r\n      sha256: \"41a20518f0cb1256669420fdba0cd90d21561e560ac240f26ef8322e45bb7ed6\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.0.0\"\r\n  nested:\r\n    dependency: transitive\r\n    description:\r\n      name: nested\r\n      sha256: \"03bac4c528c64c95c722ec99280375a6f2fc708eec17c7b3f07253b626cd2a20\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.0.0\"\r\n  package_config:\r\n    dependency: transitive\r\n    description:\r\n      name: package_config\r\n      sha256: f096c55ebb7deb7e384101542bfba8c52696c1b56fca2eb62827989ef2353bbc\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.2.0\"\r\n  path:\r\n    dependency: transitive\r\n    description:\r\n      name: path\r\n      sha256: \"75cca69d1490965be98c73ceaea117e8a04dd21217b37b292c9ddbec0d955bc5\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.9.1\"\r\n  path_parsing:\r\n    dependency: transitive\r\n    description:\r\n      name: path_parsing\r\n      sha256: \"883402936929eac138ee0a45da5b0f2c80f89913e6dc3bf77eb65b84b409c6ca\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.1.0\"\r\n  path_provider:\r\n    dependency: transitive\r\n    description:\r\n      name: path_provider\r\n      sha256: \"50c5dd5b6e1aaf6fb3a78b33f6aa3afca52bf903a8a5298f53101fdaee55bbcd\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.1.5\"\r\n  path_provider_android:\r\n    dependency: transitive\r\n    description:\r\n      name: path_provider_android\r\n      sha256: f2c65e21139ce2c3dad46922be8272bb5963516045659e71bb16e151c93b580e\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.2.22\"\r\n  path_provider_foundation:\r\n    dependency: transitive\r\n    description:\r\n      name: path_provider_foundation\r\n      sha256: \"6d13aece7b3f5c5a9731eaf553ff9dcbc2eff41087fd2df587fd0fed9a3eb0c4\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.5.1\"\r\n  path_provider_linux:\r\n    dependency: transitive\r\n    description:\r\n      name: path_provider_linux\r\n      sha256: f7a1fe3a634fe7734c8d3f2766ad746ae2a2884abe22e241a8b301bf5cac3279\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.2.1\"\r\n  path_provider_platform_interface:\r\n    dependency: transitive\r\n    description:\r\n      name: path_provider_platform_interface\r\n      sha256: \"88f5779f72ba699763fa3a3b06aa4bf6de76c8e5de842cf6f29e2e06476c2334\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.1.2\"\r\n  path_provider_windows:\r\n    dependency: transitive\r\n    description:\r\n      name: path_provider_windows\r\n      sha256: bd6f00dbd873bfb70d0761682da2b3a2c2fccc2b9e84c495821639601d81afe7\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.3.0\"\r\n  petitparser:\r\n    dependency: transitive\r\n    description:\r\n      name: petitparser\r\n      sha256: \"1a97266a94f7350d30ae522c0af07890c70b8e62c71e8e3920d1db4d23c057d1\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"7.0.1\"\r\n  platform:\r\n    dependency: transitive\r\n    description:\r\n      name: platform\r\n      sha256: \"5d6b1b0036a5f331ebc77c850ebc8506cbc1e9416c27e59b439f917a902a4984\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"3.1.6\"\r\n  plugin_platform_interface:\r\n    dependency: transitive\r\n    description:\r\n      name: plugin_platform_interface\r\n      sha256: \"4820fbfdb9478b1ebae27888254d445073732dae3d6ea81f0b7e06d5dedc3f02\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.1.8\"\r\n  pool:\r\n    dependency: transitive\r\n    description:\r\n      name: pool\r\n      sha256: \"978783255c543aa3586a1b3c21f6e9d720eb315376a915872c61ef8b5c20177d\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.5.2\"\r\n  provider:\r\n    dependency: \"direct main\"\r\n    description:\r\n      name: provider\r\n      sha256: \"4e82183fa20e5ca25703ead7e05de9e4cceed1fbd1eadc1ac3cb6f565a09f272\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"6.1.5+1\"\r\n  pub_semver:\r\n    dependency: transitive\r\n    description:\r\n      name: pub_semver\r\n      sha256: \"5bfcf68ca79ef689f8990d1160781b4bad40a3bd5e5218ad4076ddb7f4081585\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.2.0\"\r\n  pubspec_parse:\r\n    dependency: transitive\r\n    description:\r\n      name: pubspec_parse\r\n      sha256: \"0560ba233314abbed0a48a2956f7f022cce7c3e1e73df540277da7544cad4082\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.5.0\"\r\n  shared_preferences:\r\n    dependency: \"direct main\"\r\n    description:\r\n      name: shared_preferences\r\n      sha256: \"2939ae520c9024cb197fc20dee269cd8cdbf564c8b5746374ec6cacdc5169e64\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.5.4\"\r\n  shared_preferences_android:\r\n    dependency: transitive\r\n    description:\r\n      name: shared_preferences_android\r\n      sha256: \"83af5c682796c0f7719c2bbf74792d113e40ae97981b8f266fa84574573556bc\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.4.18\"\r\n  shared_preferences_foundation:\r\n    dependency: transitive\r\n    description:\r\n      name: shared_preferences_foundation\r\n      sha256: \"4e7eaffc2b17ba398759f1151415869a34771ba11ebbccd1b0145472a619a64f\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.5.6\"\r\n  shared_preferences_linux:\r\n    dependency: transitive\r\n    description:\r\n      name: shared_preferences_linux\r\n      sha256: \"580abfd40f415611503cae30adf626e6656dfb2f0cee8f465ece7b6defb40f2f\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.4.1\"\r\n  shared_preferences_platform_interface:\r\n    dependency: transitive\r\n    description:\r\n      name: shared_preferences_platform_interface\r\n      sha256: \"57cbf196c486bc2cf1f02b85784932c6094376284b3ad5779d1b1c6c6a816b80\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.4.1\"\r\n  shared_preferences_web:\r\n    dependency: transitive\r\n    description:\r\n      name: shared_preferences_web\r\n      sha256: c49bd060261c9a3f0ff445892695d6212ff603ef3115edbb448509d407600019\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.4.3\"\r\n  shared_preferences_windows:\r\n    dependency: transitive\r\n    description:\r\n      name: shared_preferences_windows\r\n      sha256: \"94ef0f72b2d71bc3e700e025db3710911bd51a71cefb65cc609dd0d9a982e3c1\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.4.1\"\r\n  shelf:\r\n    dependency: transitive\r\n    description:\r\n      name: shelf\r\n      sha256: e7dd780a7ffb623c57850b33f43309312fc863fb6aa3d276a754bb299839ef12\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.4.2\"\r\n  shelf_web_socket:\r\n    dependency: transitive\r\n    description:\r\n      name: shelf_web_socket\r\n      sha256: \"3632775c8e90d6c9712f883e633716432a27758216dfb61bd86a8321c0580925\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"3.0.0\"\r\n  sky_engine:\r\n    dependency: transitive\r\n    description: flutter\r\n    source: sdk\r\n    version: \"0.0.0\"\r\n  socket_io_client:\r\n    dependency: \"direct main\"\r\n    description:\r\n      name: socket_io_client\r\n      sha256: ede469f3e4c55e8528b4e023bdedbc20832e8811ab9b61679d1ba3ed5f01f23b\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.0.3+1\"\r\n  socket_io_common:\r\n    dependency: transitive\r\n    description:\r\n      name: socket_io_common\r\n      sha256: \"2ab92f8ff3ebbd4b353bf4a98bee45cc157e3255464b2f90f66e09c4472047eb\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.0.3\"\r\n  source_gen:\r\n    dependency: transitive\r\n    description:\r\n      name: source_gen\r\n      sha256: \"07b277b67e0096c45196cbddddf2d8c6ffc49342e88bf31d460ce04605ddac75\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"4.1.1\"\r\n  source_helper:\r\n    dependency: transitive\r\n    description:\r\n      name: source_helper\r\n      sha256: e82b1996c63da42aa3e6a34cc1ec17427728a1baf72ed017717a5669a7123f0d\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.3.9\"\r\n  source_span:\r\n    dependency: transitive\r\n    description:\r\n      name: source_span\r\n      sha256: \"254ee5351d6cb365c859e20ee823c3bb479bf4a293c22d17a9f1bf144ce86f7c\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.10.1\"\r\n  stack_trace:\r\n    dependency: transitive\r\n    description:\r\n      name: stack_trace\r\n      sha256: \"8b27215b45d22309b5cddda1aa2b19bdfec9df0e765f2de506401c071d38d1b1\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.12.1\"\r\n  stream_channel:\r\n    dependency: transitive\r\n    description:\r\n      name: stream_channel\r\n      sha256: \"969e04c80b8bcdf826f8f16579c7b14d780458bd97f56d107d3950fdbeef059d\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.1.4\"\r\n  stream_transform:\r\n    dependency: transitive\r\n    description:\r\n      name: stream_transform\r\n      sha256: ad47125e588cfd37a9a7f86c7d6356dde8dfe89d071d293f80ca9e9273a33871\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.1.1\"\r\n  string_scanner:\r\n    dependency: transitive\r\n    description:\r\n      name: string_scanner\r\n      sha256: \"921cd31725b72fe181906c6a94d987c78e3b98c2e205b397ea399d4054872b43\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.4.1\"\r\n  term_glyph:\r\n    dependency: transitive\r\n    description:\r\n      name: term_glyph\r\n      sha256: \"7f554798625ea768a7518313e58f83891c7f5024f88e46e7182a4558850a4b8e\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.2.2\"\r\n  test_api:\r\n    dependency: transitive\r\n    description:\r\n      name: test_api\r\n      sha256: ab2726c1a94d3176a45960b6234466ec367179b87dd74f1611adb1f3b5fb9d55\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"0.7.7\"\r\n  typed_data:\r\n    dependency: transitive\r\n    description:\r\n      name: typed_data\r\n      sha256: f9049c039ebfeb4cf7a7104a675823cd72dba8297f264b6637062516699fa006\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.4.0\"\r\n  uuid:\r\n    dependency: \"direct main\"\r\n    description:\r\n      name: uuid\r\n      sha256: a11b666489b1954e01d992f3d601b1804a33937b5a8fe677bd26b8a9f96f96e8\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"4.5.2\"\r\n  vector_graphics:\r\n    dependency: transitive\r\n    description:\r\n      name: vector_graphics\r\n      sha256: a4f059dc26fc8295b5921376600a194c4ec7d55e72f2fe4c7d2831e103d461e6\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.1.19\"\r\n  vector_graphics_codec:\r\n    dependency: transitive\r\n    description:\r\n      name: vector_graphics_codec\r\n      sha256: \"99fd9fbd34d9f9a32efd7b6a6aae14125d8237b10403b422a6a6dfeac2806146\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.1.13\"\r\n  vector_graphics_compiler:\r\n    dependency: transitive\r\n    description:\r\n      name: vector_graphics_compiler\r\n      sha256: d354a7ec6931e6047785f4db12a1f61ec3d43b207fc0790f863818543f8ff0dc\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.1.19\"\r\n  vector_math:\r\n    dependency: transitive\r\n    description:\r\n      name: vector_math\r\n      sha256: d530bd74fea330e6e364cda7a85019c434070188383e1cd8d9777ee586914c5b\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"2.2.0\"\r\n  vm_service:\r\n    dependency: transitive\r\n    description:\r\n      name: vm_service\r\n      sha256: \"45caa6c5917fa127b5dbcfbd1fa60b14e583afdc08bfc96dda38886ca252eb60\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"15.0.2\"\r\n  watcher:\r\n    dependency: transitive\r\n    description:\r\n      name: watcher\r\n      sha256: f52385d4f73589977c80797e60fe51014f7f2b957b5e9a62c3f6ada439889249\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.2.0\"\r\n  web:\r\n    dependency: transitive\r\n    description:\r\n      name: web\r\n      sha256: \"868d88a33d8a87b18ffc05f9f030ba328ffefba92d6c127917a2ba740f9cfe4a\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.1.1\"\r\n  web_socket:\r\n    dependency: transitive\r\n    description:\r\n      name: web_socket\r\n      sha256: \"34d64019aa8e36bf9842ac014bb5d2f5586ca73df5e4d9bf5c936975cae6982c\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.0.1\"\r\n  web_socket_channel:\r\n    dependency: transitive\r\n    description:\r\n      name: web_socket_channel\r\n      sha256: d645757fb0f4773d602444000a8131ff5d48c9e47adfe9772652dd1a4f2d45c8\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"3.0.3\"\r\n  xdg_directories:\r\n    dependency: transitive\r\n    description:\r\n      name: xdg_directories\r\n      sha256: \"7a3f37b05d989967cdddcbb571f1ea834867ae2faa29725fd085180e0883aa15\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"1.1.0\"\r\n  xml:\r\n    dependency: transitive\r\n    description:\r\n      name: xml\r\n      sha256: \"971043b3a0d3da28727e40ed3e0b5d18b742fa5a68665cca88e74b7876d5e025\"\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"6.6.1\"\r\n  yaml:\r\n    dependency: transitive\r\n    description:\r\n      name: yaml\r\n      sha256: b9da305ac7c39faa3f030eccd175340f968459dae4af175130b3fc47e40d76ce\r\n      url: \"https://pub.dev\"\r\n    source: hosted\r\n    version: \"3.1.3\"\r\nsdks:\r\n  dart: \">=3.10.3 <4.0.0\"\r\n  flutter: \">=3.35.0\"\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/axiom/pubspec.lock b/axiom/pubspec.lock
+--- a/axiom/pubspec.lock	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ b/axiom/pubspec.lock	(date 1770107347645)
+@@ -5,18 +5,18 @@
+     dependency: transitive
+     description:
+       name: _fe_analyzer_shared
+-      sha256: "5b7468c326d2f8a4f630056404ca0d291ade42918f4a3c6233618e724f39da8e"
++      sha256: da0d9209ca76bde579f2da330aeb9df62b6319c834fa7baae052021b0462401f
+       url: "https://pub.dev"
+     source: hosted
+-    version: "92.0.0"
++    version: "85.0.0"
+   analyzer:
+     dependency: transitive
+     description:
+       name: analyzer
+-      sha256: "70e4b1ef8003c64793a9e268a551a82869a8a96f39deb73dea28084b0e8bf75e"
++      sha256: "974859dc0ff5f37bc4313244b3218c791810d03ab3470a579580279ba971a48d"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "9.0.0"
++    version: "7.7.1"
+   args:
+     dependency: transitive
+     description:
+@@ -29,50 +29,66 @@
+     dependency: transitive
+     description:
+       name: async
+-      sha256: "758e6d74e971c3e5aceb4110bfd6698efc7f501675bcfe0c775459a8140750eb"
++      sha256: "947bfcf187f74dbc5e146c9eb9c0f10c9f8b30743e341481c1e2ed3ecc18c20c"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.13.0"
++    version: "2.11.0"
+   boolean_selector:
+     dependency: transitive
+     description:
+       name: boolean_selector
+-      sha256: "8aab1771e1243a5063b8b0ff68042d67334e3feab9e95b9490f9a6ebf73b42ea"
++      sha256: "6cfb5af12253eaf2b368f07bacc5a80d1301a071c73360d746b7f2e32d762c66"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.1.2"
++    version: "2.1.1"
+   build:
+     dependency: transitive
+     description:
+       name: build
+-      sha256: c1668065e9ba04752570ad7e038288559d1e2ca5c6d0131c0f5f55e39e777413
++      sha256: cef23f1eda9b57566c81e2133d196f8e3df48f244b317368d65c5943d91148f0
+       url: "https://pub.dev"
+     source: hosted
+-    version: "4.0.3"
++    version: "2.4.2"
+   build_config:
+     dependency: transitive
+     description:
+       name: build_config
+-      sha256: "4f64382b97504dc2fcdf487d5aae33418e08b4703fc21249e4db6d804a4d0187"
++      sha256: "4ae2de3e1e67ea270081eaee972e1bd8f027d459f249e0f1186730784c2e7e33"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.2.0"
++    version: "1.1.2"
+   build_daemon:
+     dependency: transitive
+     description:
+       name: build_daemon
+-      sha256: bf05f6e12cfea92d3c09308d7bcdab1906cd8a179b023269eed00c071004b957
++      sha256: "8e928697a82be082206edb0b9c99c5a4ad6bc31c9e9b8b2f291ae65cd4a25daa"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "4.1.1"
++    version: "4.0.4"
++  build_resolvers:
++    dependency: transitive
++    description:
++      name: build_resolvers
++      sha256: b9e4fda21d846e192628e7a4f6deda6888c36b5b69ba02ff291a01fd529140f0
++      url: "https://pub.dev"
++    source: hosted
++    version: "2.4.4"
+   build_runner:
+     dependency: "direct dev"
+     description:
+       name: build_runner
+-      sha256: "110c56ef29b5eb367b4d17fc79375fa8c18a6cd7acd92c05bb3986c17a079057"
++      sha256: "058fe9dce1de7d69c4b84fada934df3e0153dd000758c4d65964d0166779aa99"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.10.4"
++    version: "2.4.15"
++  build_runner_core:
++    dependency: transitive
++    description:
++      name: build_runner_core
++      sha256: "22e3aa1c80e0ada3722fe5b63fd43d9c8990759d0a2cf489c8c5d7b2bdebc021"
++      url: "https://pub.dev"
++    source: hosted
++    version: "8.0.0"
+   built_collection:
+     dependency: transitive
+     description:
+@@ -93,42 +109,42 @@
+     dependency: transitive
+     description:
+       name: characters
+-      sha256: f71061c654a3380576a52b451dd5532377954cf9dbd272a78fc8479606670803
++      sha256: "04a925763edad70e8443c99234dc3328f442e811f1d8fd1a72f1c8ad0f69a605"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.4.0"
++    version: "1.3.0"
+   checked_yaml:
+     dependency: transitive
+     description:
+       name: checked_yaml
+-      sha256: "959525d3162f249993882720d52b7e0c833978df229be20702b33d48d91de70f"
++      sha256: feb6bed21949061731a7a75fc5d2aa727cf160b91af9a3e464c5e3a32e28b5ff
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.0.4"
++    version: "2.0.3"
+   clock:
+     dependency: transitive
+     description:
+       name: clock
+-      sha256: fddb70d9b5277016c77a80201021d40a2247104d9f4aa7bab7157b7e3f05b84b
++      sha256: cb6d7f03e1de671e34607e909a7213e31d7752be4fb66a86d29fe1eb14bfb5cf
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.1.2"
++    version: "1.1.1"
+   code_builder:
+     dependency: transitive
+     description:
+       name: code_builder
+-      sha256: "11654819532ba94c34de52ff5feb52bd81cba1de00ef2ed622fd50295f9d4243"
++      sha256: "0ec10bf4a89e4c613960bf1e8b42c64127021740fb21640c29c909826a5eea3e"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "4.11.0"
++    version: "4.10.1"
+   collection:
+     dependency: transitive
+     description:
+       name: collection
+-      sha256: "2f5709ae4d3d59dd8f7cd309b4e023046b57d8a6c82130785d2b0e5868084e76"
++      sha256: a1ace0a119f20aabc852d165077c036cd864315bd99b7eaa10a60100341941bf
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.19.1"
++    version: "1.19.0"
+   convert:
+     dependency: transitive
+     description:
+@@ -157,10 +173,10 @@
+     dependency: transitive
+     description:
+       name: dart_style
+-      sha256: a9c30492da18ff84efe2422ba2d319a89942d93e58eb0b73d32abe822ef54b7b
++      sha256: "27eb0ae77836989a3bc541ce55595e8ceee0992807f14511552a898ddd0d88ac"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "3.1.3"
++    version: "3.0.1"
+   dio:
+     dependency: "direct main"
+     description:
+@@ -181,18 +197,18 @@
+     dependency: transitive
+     description:
+       name: fake_async
+-      sha256: "5368f224a74523e8d2e7399ea1638b37aecfca824a3cc4dfdf77bf1fa905ac44"
++      sha256: "511392330127add0b769b75a987850d136345d9227c6b94c96a04cf4a391bf78"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.3.3"
++    version: "1.3.1"
+   ffi:
+     dependency: transitive
+     description:
+       name: ffi
+-      sha256: "289279317b4b16eb2bb7e271abccd4bf84ec9bdcbe999e278a94b804f5630418"
++      sha256: "16ed7b077ef01ad6170a3d0c57caa4a112a38d7a2ed5602e0aca9ca6f3d98da6"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.1.4"
++    version: "2.1.3"
+   file:
+     dependency: transitive
+     description:
+@@ -226,18 +242,18 @@
+     dependency: "direct dev"
+     description:
+       name: flutter_lints
+-      sha256: "3105dc8492f6183fb076ccf1f351ac3d60564bff92e20bfc4af9cc1651f4e7e1"
++      sha256: "5398f14efa795ffb7a33e9b6a08798b26a180edac4ad7db3f231e40f82ce11e1"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "6.0.0"
++    version: "5.0.0"
+   flutter_svg:
+     dependency: "direct main"
+     description:
+       name: flutter_svg
+-      sha256: "87fbd7c534435b6c5d9d98b01e1fd527812b82e68ddd8bd35fc45ed0fa8f0a95"
++      sha256: cd57f7969b4679317c17af6fd16ee233c1e60a82ed209d8a475c54fd6fd6f845
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.2.3"
++    version: "2.2.0"
+   flutter_test:
+     dependency: "direct dev"
+     description: flutter
+@@ -248,6 +264,14 @@
+     description: flutter
+     source: sdk
+     version: "0.0.0"
++  frontend_server_client:
++    dependency: transitive
++    description:
++      name: frontend_server_client
++      sha256: f64a0333a82f30b0cca061bc3d143813a486dc086b574bfb233b7c1372427694
++      url: "https://pub.dev"
++    source: hosted
++    version: "4.0.0"
+   glob:
+     dependency: transitive
+     description:
+@@ -260,10 +284,10 @@
+     dependency: "direct main"
+     description:
+       name: google_fonts
+-      sha256: ba03d03bcaa2f6cb7bd920e3b5027181db75ab524f8891c8bc3aa603885b8055
++      sha256: df9763500dadba0155373e9cb44e202ce21bd9ed5de6bdbd05c5854e86839cb8
+       url: "https://pub.dev"
+     source: hosted
+-    version: "6.3.3"
++    version: "6.3.0"
+   graphs:
+     dependency: transitive
+     description:
+@@ -324,42 +348,42 @@
+     dependency: "direct dev"
+     description:
+       name: json_serializable
+-      sha256: "6b253f7851cf1626a05c8b49c792e04a14897349798c03798137f2b5f7e0b5b1"
++      sha256: c50ef5fc083d5b5e12eef489503ba3bf5ccc899e487d691584699b4bdefeea8c
+       url: "https://pub.dev"
+     source: hosted
+-    version: "6.11.3"
++    version: "6.9.5"
+   leak_tracker:
+     dependency: transitive
+     description:
+       name: leak_tracker
+-      sha256: "33e2e26bdd85a0112ec15400c8cbffea70d0f9c3407491f672a2fad47915e2de"
++      sha256: "7bb2830ebd849694d1ec25bf1f44582d6ac531a57a365a803a6034ff751d2d06"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "11.0.2"
++    version: "10.0.7"
+   leak_tracker_flutter_testing:
+     dependency: transitive
+     description:
+       name: leak_tracker_flutter_testing
+-      sha256: "1dbc140bb5a23c75ea9c4811222756104fbcd1a27173f0c34ca01e16bea473c1"
++      sha256: "9491a714cca3667b60b5c420da8217e6de0d1ba7a5ec322fab01758f6998f379"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "3.0.10"
++    version: "3.0.8"
+   leak_tracker_testing:
+     dependency: transitive
+     description:
+       name: leak_tracker_testing
+-      sha256: "8d5a2d49f4a66b49744b23b018848400d23e54caf9463f4eb20df3eb8acb2eb1"
++      sha256: "6ba465d5d76e67ddf503e1161d1f4a6bc42306f9d66ca1e8f079a47290fb06d3"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "3.0.2"
++    version: "3.0.1"
+   lints:
+     dependency: transitive
+     description:
+       name: lints
+-      sha256: a5e2b223cb7c9c8efdc663ef484fdd95bb243bff242ef5b13e26883547fce9a0
++      sha256: c35bb79562d980e9a453fc715854e1ed39e24e7d0297a880ef54e17f9874a9d7
+       url: "https://pub.dev"
+     source: hosted
+-    version: "6.0.0"
++    version: "5.1.1"
+   logging:
+     dependency: transitive
+     description:
+@@ -372,10 +396,10 @@
+     dependency: transitive
+     description:
+       name: matcher
+-      sha256: dc58c723c3c24bf8d3e2d3ad3f2f9d7bd9cf43ec6feaa64181775e60190153f2
++      sha256: d2323aa2060500f906aa31a895b4030b6da3ebdcc5619d14ce1aada65cd161cb
+       url: "https://pub.dev"
+     source: hosted
+-    version: "0.12.17"
++    version: "0.12.16+1"
+   material_color_utilities:
+     dependency: transitive
+     description:
+@@ -388,10 +412,10 @@
+     dependency: transitive
+     description:
+       name: meta
+-      sha256: "23f08335362185a5ea2ad3a4e597f1375e78bce8a040df5c600c8d3552ef2394"
++      sha256: bdb68674043280c3428e9ec998512fb681678676b3c54e773629ffe74419f8c7
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.17.0"
++    version: "1.15.0"
+   mime:
+     dependency: transitive
+     description:
+@@ -420,10 +444,10 @@
+     dependency: transitive
+     description:
+       name: path
+-      sha256: "75cca69d1490965be98c73ceaea117e8a04dd21217b37b292c9ddbec0d955bc5"
++      sha256: "087ce49c3f0dc39180befefc60fdb4acd8f8620e5682fe2476afd0b3688bb4af"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.9.1"
++    version: "1.9.0"
+   path_parsing:
+     dependency: transitive
+     description:
+@@ -444,18 +468,18 @@
+     dependency: transitive
+     description:
+       name: path_provider_android
+-      sha256: f2c65e21139ce2c3dad46922be8272bb5963516045659e71bb16e151c93b580e
++      sha256: d0d310befe2c8ab9e7f393288ccbb11b60c019c6b5afc21973eeee4dda2b35e9
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.2.22"
++    version: "2.2.17"
+   path_provider_foundation:
+     dependency: transitive
+     description:
+       name: path_provider_foundation
+-      sha256: "6d13aece7b3f5c5a9731eaf553ff9dcbc2eff41087fd2df587fd0fed9a3eb0c4"
++      sha256: "4843174df4d288f5e29185bd6e72a6fbdf5a4a4602717eed565497429f179942"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.5.1"
++    version: "2.4.1"
+   path_provider_linux:
+     dependency: transitive
+     description:
+@@ -484,10 +508,10 @@
+     dependency: transitive
+     description:
+       name: petitparser
+-      sha256: "1a97266a94f7350d30ae522c0af07890c70b8e62c71e8e3920d1db4d23c057d1"
++      sha256: c15605cd28af66339f8eb6fbe0e541bfe2d1b72d5825efc6598f3e0a31b9ad27
+       url: "https://pub.dev"
+     source: hosted
+-    version: "7.0.1"
++    version: "6.0.2"
+   platform:
+     dependency: transitive
+     description:
+@@ -540,26 +564,26 @@
+     dependency: "direct main"
+     description:
+       name: shared_preferences
+-      sha256: "2939ae520c9024cb197fc20dee269cd8cdbf564c8b5746374ec6cacdc5169e64"
++      sha256: "6e8bf70b7fef813df4e9a36f658ac46d107db4b4cfe1048b477d4e453a8159f5"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.5.4"
++    version: "2.5.3"
+   shared_preferences_android:
+     dependency: transitive
+     description:
+       name: shared_preferences_android
+-      sha256: "83af5c682796c0f7719c2bbf74792d113e40ae97981b8f266fa84574573556bc"
++      sha256: "5bcf0772a761b04f8c6bf814721713de6f3e5d9d89caf8d3fe031b02a342379e"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.4.18"
++    version: "2.4.11"
+   shared_preferences_foundation:
+     dependency: transitive
+     description:
+       name: shared_preferences_foundation
+-      sha256: "4e7eaffc2b17ba398759f1151415869a34771ba11ebbccd1b0145472a619a64f"
++      sha256: "6a52cfcdaeac77cad8c97b539ff688ccfc458c007b4db12be584fbe5c0e49e03"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.5.6"
++    version: "2.5.4"
+   shared_preferences_linux:
+     dependency: transitive
+     description:
+@@ -633,42 +657,42 @@
+     dependency: transitive
+     description:
+       name: source_gen
+-      sha256: "07b277b67e0096c45196cbddddf2d8c6ffc49342e88bf31d460ce04605ddac75"
++      sha256: "35c8150ece9e8c8d263337a265153c3329667640850b9304861faea59fc98f6b"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "4.1.1"
++    version: "2.0.0"
+   source_helper:
+     dependency: transitive
+     description:
+       name: source_helper
+-      sha256: e82b1996c63da42aa3e6a34cc1ec17427728a1baf72ed017717a5669a7123f0d
++      sha256: a447acb083d3a5ef17f983dd36201aeea33fedadb3228fa831f2f0c92f0f3aca
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.3.9"
++    version: "1.3.7"
+   source_span:
+     dependency: transitive
+     description:
+       name: source_span
+-      sha256: "254ee5351d6cb365c859e20ee823c3bb479bf4a293c22d17a9f1bf144ce86f7c"
++      sha256: "53e943d4206a5e30df338fd4c6e7a077e02254531b138a15aec3bd143c1a8b3c"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.10.1"
++    version: "1.10.0"
+   stack_trace:
+     dependency: transitive
+     description:
+       name: stack_trace
+-      sha256: "8b27215b45d22309b5cddda1aa2b19bdfec9df0e765f2de506401c071d38d1b1"
++      sha256: "9f47fd3630d76be3ab26f0ee06d213679aa425996925ff3feffdec504931c377"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.12.1"
++    version: "1.12.0"
+   stream_channel:
+     dependency: transitive
+     description:
+       name: stream_channel
+-      sha256: "969e04c80b8bcdf826f8f16579c7b14d780458bd97f56d107d3950fdbeef059d"
++      sha256: ba2aa5d8cc609d96bbb2899c28934f9e1af5cddbd60a827822ea467161eb54e7
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.1.4"
++    version: "2.1.2"
+   stream_transform:
+     dependency: transitive
+     description:
+@@ -681,26 +705,34 @@
+     dependency: transitive
+     description:
+       name: string_scanner
+-      sha256: "921cd31725b72fe181906c6a94d987c78e3b98c2e205b397ea399d4054872b43"
++      sha256: "688af5ed3402a4bde5b3a6c15fd768dbf2621a614950b17f04626c431ab3c4c3"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.4.1"
++    version: "1.3.0"
+   term_glyph:
+     dependency: transitive
+     description:
+       name: term_glyph
+-      sha256: "7f554798625ea768a7518313e58f83891c7f5024f88e46e7182a4558850a4b8e"
++      sha256: a29248a84fbb7c79282b40b8c72a1209db169a2e0542bce341da992fe1bc7e84
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.2.2"
++    version: "1.2.1"
+   test_api:
+     dependency: transitive
+     description:
+       name: test_api
+-      sha256: ab2726c1a94d3176a45960b6234466ec367179b87dd74f1611adb1f3b5fb9d55
++      sha256: "664d3a9a64782fcdeb83ce9c6b39e78fd2971d4e37827b9b06c3aa1edc5e760c"
++      url: "https://pub.dev"
++    source: hosted
++    version: "0.7.3"
++  timing:
++    dependency: transitive
++    description:
++      name: timing
++      sha256: "62ee18aca144e4a9f29d212f5a4c6a053be252b895ab14b5821996cff4ed90fe"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "0.7.7"
++    version: "1.0.2"
+   typed_data:
+     dependency: transitive
+     description:
+@@ -737,26 +769,26 @@
+     dependency: transitive
+     description:
+       name: vector_graphics_compiler
+-      sha256: d354a7ec6931e6047785f4db12a1f61ec3d43b207fc0790f863818543f8ff0dc
++      sha256: ca81fdfaf62a5ab45d7296614aea108d2c7d0efca8393e96174bf4d51e6725b0
+       url: "https://pub.dev"
+     source: hosted
+-    version: "1.1.19"
++    version: "1.1.18"
+   vector_math:
+     dependency: transitive
+     description:
+       name: vector_math
+-      sha256: d530bd74fea330e6e364cda7a85019c434070188383e1cd8d9777ee586914c5b
++      sha256: "80b3257d1492ce4d091729e3a67a60407d227c27241d6927be0130c98e741803"
+       url: "https://pub.dev"
+     source: hosted
+-    version: "2.2.0"
++    version: "2.1.4"
+   vm_service:
+     dependency: transitive
+     description:
+       name: vm_service
+-      sha256: "45caa6c5917fa127b5dbcfbd1fa60b14e583afdc08bfc96dda38886ca252eb60"
++      sha256: f6be3ed8bd01289b34d679c2b62226f63c0e69f9fd2e50a6b3c1c729a961041b
+       url: "https://pub.dev"
+     source: hosted
+-    version: "15.0.2"
++    version: "14.3.0"
+   watcher:
+     dependency: transitive
+     description:
+@@ -801,10 +833,10 @@
+     dependency: transitive
+     description:
+       name: xml
+-      sha256: "971043b3a0d3da28727e40ed3e0b5d18b742fa5a68665cca88e74b7876d5e025"
++      sha256: b015a8ad1c488f66851d762d3090a21c600e479dc75e68328c52774040cf9226
+       url: "https://pub.dev"
+     source: hosted
+-    version: "6.6.1"
++    version: "6.5.0"
+   yaml:
+     dependency: transitive
+     description:
+@@ -814,5 +846,5 @@
+     source: hosted
+     version: "3.1.3"
+ sdks:
+-  dart: ">=3.10.3 <4.0.0"
+-  flutter: ">=3.35.0"
++  dart: ">=3.6.0 <4.0.0"
++  flutter: ">=3.27.0"
+Index: axiom/lib/main.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nimport 'package:axiom/providers/ApiProvider.dart';\r\nimport 'package:axiom/providers/AuthProvider.dart';\r\nimport 'package:axiom/screens/APIManagementScreen.dart';\r\nimport 'package:axiom/screens/SpleshScreen.dart';\r\nimport 'package:flutter/material.dart';\r\nimport 'package:provider/provider.dart';\r\nimport 'screens/auth/login_screen.dart';\r\nimport 'screens/Dashboard.dart';\r\nimport 'screens/editor/editor_screen.dart';\r\nimport 'screens/preview/PreviewList.dart';\r\nimport 'services/auth_service.dart';\r\nimport 'services/project_service.dart';\r\nimport 'services/websocket_service.dart';\r\nimport 'providers/ProjectProvider.dart';\r\nimport 'providers/WidgetProvider.dart';\r\n\r\nvoid main() {\r\n  runApp(const MyApp());\r\n}\r\n\r\nclass MyApp extends StatelessWidget {\r\n  const MyApp({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return MultiProvider(\r\n      providers: [\r\n        ChangeNotifierProvider(create: (_) => ProjectProvider()),\r\n        ChangeNotifierProvider(create: (_) => WidgetProvider()),\r\n        Provider<AuthService>(create: (_) => AuthService()),\r\n        ChangeNotifierProvider<AuthProvider>(\r\n          create: (context) => AuthProvider(context.read<AuthService>()),\r\n        ),\r\n        ChangeNotifierProvider<ApiProvider>(\r\n          create: (context) => ApiProvider(\r\n            context.read<ProjectProvider>(),\r\n          ),\r\n        ),\r\n        Provider(create: (_) => ProjectService()),\r\n        Provider(create: (_) => WebSocketService()),\r\n      ],\r\n      child: MaterialApp(\r\n        title: 'Axiom - No-Code Platform',\r\n        debugShowCheckedModeBanner: false,\r\n        theme: ThemeData(\r\n          colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),\r\n          useMaterial3: true,\r\n          fontFamily: 'Roboto',\r\n        ),\r\n        initialRoute: '/splash',\r\n        routes: {\r\n          '/splash': (context) => const SplashScreen(),\r\n          '/login': (context) => const LoginScreen(),\r\n          '/dashboard': (context) => const Dashboard(),\r\n          '/editor': (context) => const EditorScreen(),\r\n          '/api-management': (context) => const APIManagementScreen(),\r\n          '/preview': (context) => const PreviewList(),\r\n        },\r\n      ),\r\n    );\r\n  }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/axiom/lib/main.dart b/axiom/lib/main.dart
+--- a/axiom/lib/main.dart	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ b/axiom/lib/main.dart	(date 1769604889146)
+@@ -1,8 +1,8 @@
+-
+ import 'package:axiom/providers/ApiProvider.dart';
+ import 'package:axiom/providers/AuthProvider.dart';
+ import 'package:axiom/screens/APIManagementScreen.dart';
+ import 'package:axiom/screens/SpleshScreen.dart';
++import 'package:axiom/screens/AIAgentScreen.dart';
+ import 'package:flutter/material.dart';
+ import 'package:provider/provider.dart';
+ import 'screens/auth/login_screen.dart';
+@@ -56,6 +56,7 @@
+           '/editor': (context) => const EditorScreen(),
+           '/api-management': (context) => const APIManagementScreen(),
+           '/preview': (context) => const PreviewList(),
++          '/ai-agent': (context) => const AIAgentScreen(),
+         },
+       ),
+     );
+Index: axiom/lib/screens/editor/widgets/widget_palette.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nimport 'package:flutter/material.dart';\r\nimport 'package:provider/provider.dart';\r\nimport '../../../providers/WidgetProvider.dart';\r\nimport '../../../models/widget_model.dart';\r\nimport 'package:uuid/uuid.dart';\r\n\r\nclass WidgetPalette extends StatelessWidget {\r\n  const WidgetPalette({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    final widgetTypes = [\r\n      {'type': 'Container', 'icon': Icons.crop_square, 'color': Colors.blue},\r\n      {'type': 'Text', 'icon': Icons.text_fields, 'color': Colors.green},\r\n      {'type': 'Button', 'icon': Icons.smart_button, 'color': Colors.orange},\r\n      {'type': 'Image', 'icon': Icons.image, 'color': Colors.purple},\r\n      {'type': 'Card', 'icon': Icons.credit_card, 'color': Colors.teal},\r\n      {'type': 'Row', 'icon': Icons.view_week, 'color': Colors.indigo},\r\n      {'type': 'Column', 'icon': Icons.view_column, 'color': Colors.pink},\r\n      {'type': 'ListView', 'icon': Icons.list, 'color': Colors.cyan},\r\n      {'type': 'TextField', 'icon': Icons.input, 'color': Colors.amber},\r\n      {'type': 'AppBar', 'icon': Icons.web_asset, 'color': Colors.deepOrange},\r\n    ];\r\n\r\n    return Column(\r\n      crossAxisAlignment: CrossAxisAlignment.start,\r\n      children: [\r\n        Padding(\r\n          padding: const EdgeInsets.all(16),\r\n          child: Text(\r\n            'Widget Palette',\r\n            style: Theme.of(context).textTheme.titleLarge?.copyWith(\r\n              fontWeight: FontWeight.bold,\r\n            ),\r\n          ),\r\n        ),\r\n        const Divider(height: 1),\r\n        Expanded(\r\n          child: ListView.builder(\r\n            padding: const EdgeInsets.all(12),\r\n            itemCount: widgetTypes.length,\r\n            itemBuilder: (context, index) {\r\n              final widget = widgetTypes[index];\r\n              return _WidgetPaletteItem(\r\n                type: widget['type'] as String,\r\n                icon: widget['icon'] as IconData,\r\n                color: widget['color'] as Color,\r\n              );\r\n            },\r\n          ),\r\n        ),\r\n      ],\r\n    );\r\n  }\r\n}\r\n\r\nclass _WidgetPaletteItem extends StatelessWidget {\r\n  final String type;\r\n  final IconData icon;\r\n  final Color color;\r\n\r\n  const _WidgetPaletteItem({\r\n    required this.type,\r\n    required this.icon,\r\n    required this.color,\r\n  });\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Draggable<String>(\r\n      data: type,\r\n      feedback: Material(\r\n        elevation: 8,\r\n        borderRadius: BorderRadius.circular(8),\r\n        child: Container(\r\n          width: 120,\r\n          height: 80,\r\n          decoration: BoxDecoration(\r\n            color: color.withOpacity(0.2),\r\n            border: Border.all(color: color, width: 2),\r\n            borderRadius: BorderRadius.circular(8),\r\n          ),\r\n          child: Column(\r\n            mainAxisAlignment: MainAxisAlignment.center,\r\n            children: [\r\n              Icon(icon, color: color, size: 32),\r\n              const SizedBox(height: 4),\r\n              Text(\r\n                type,\r\n                style: TextStyle(\r\n                  color: color,\r\n                  fontWeight: FontWeight.bold,\r\n                ),\r\n              ),\r\n            ],\r\n          ),\r\n        ),\r\n      ),\r\n      childWhenDragging: Opacity(\r\n        opacity: 0.3,\r\n        child: _buildCard(context),\r\n      ),\r\n      child: _buildCard(context),\r\n    );\r\n  }\r\n\r\n  Widget _buildCard(BuildContext context) {\r\n    return Container(\r\n      margin: const EdgeInsets.only(bottom: 12),\r\n      child: InkWell(\r\n        onTap: () {\r\n          _addWidget(context);\r\n        },\r\n        borderRadius: BorderRadius.circular(8),\r\n        child: Container(\r\n          padding: const EdgeInsets.all(16),\r\n          decoration: BoxDecoration(\r\n            color: color.withOpacity(0.1),\r\n            border: Border.all(color: color.withOpacity(0.3)),\r\n            borderRadius: BorderRadius.circular(8),\r\n          ),\r\n          child: Row(\r\n            children: [\r\n              Icon(icon, color: color, size: 28),\r\n              const SizedBox(width: 12),\r\n              Text(\r\n                type,\r\n                style: TextStyle(\r\n                  fontSize: 16,\r\n                  fontWeight: FontWeight.w600,\r\n                ),\r\n              ),\r\n            ],\r\n          ),\r\n        ),\r\n      ),\r\n    );\r\n  }\r\n\r\n  void _addWidget(BuildContext context) {\r\n    final provider = context.read<WidgetProvider>();\r\n    final uuid = const Uuid();\r\n\r\n    final newWidget = WidgetModel(\r\n      id: uuid.v4(),\r\n      type: type,\r\n      properties: _getDefaultProperties(type),\r\n      position: Offset(100, 100),\r\n    );\r\n\r\n    provider.addWidget(newWidget);\r\n  }\r\n\r\n  Map<String, dynamic> _getDefaultProperties(String type) {\r\n    switch (type) {\r\n      case 'Text':\r\n        return {\r\n          'text': 'Text Widget',\r\n          'fontSize': 16.0,\r\n          'color': '#000000',\r\n          'fontWeight': 'normal',\r\n        };\r\n      case 'Button':\r\n        return {\r\n          'text': 'Button',\r\n          'backgroundColor': '#2196F3',\r\n          'color': '#FFFFFF',\r\n          'fontSize': 16.0,\r\n        };\r\n      case 'Container':\r\n        return {\r\n          'width': 200.0,\r\n          'height': 100.0,\r\n          'backgroundColor': '#E3F2FD',\r\n          'borderRadius': 8.0,\r\n        };\r\n      case 'Image':\r\n        return {\r\n          'width': 200.0,\r\n          'height': 200.0,\r\n          'image': 'https://via.placeholder.com/200',\r\n        };\r\n      case 'TextField':\r\n        return {\r\n          'hint': 'Enter text',\r\n          'fontSize': 16.0,\r\n        };\r\n      case 'AppBar':\r\n        return {\r\n          'title': 'App Bar',\r\n          'backgroundColor': '#2196F3',\r\n          'color': '#FFFFFF',\r\n        };\r\n      default:\r\n        return {\r\n          'backgroundColor': '#FFFFFF',\r\n        };\r\n    }\r\n  }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/axiom/lib/screens/editor/widgets/widget_palette.dart b/axiom/lib/screens/editor/widgets/widget_palette.dart
+--- a/axiom/lib/screens/editor/widgets/widget_palette.dart	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ b/axiom/lib/screens/editor/widgets/widget_palette.dart	(date 1769516614324)
+@@ -1,15 +1,83 @@
+-
+ import 'package:flutter/material.dart';
+ import 'package:provider/provider.dart';
+ import '../../../providers/WidgetProvider.dart';
+ import '../../../models/widget_model.dart';
++import '../../../widgets/ai_suggestion_panel.dart';
++import '../../../widgets/ui_design_panel.dart';
+ import 'package:uuid/uuid.dart';
+ 
+-class WidgetPalette extends StatelessWidget {
++class WidgetPalette extends StatefulWidget {
+   const WidgetPalette({super.key});
+ 
++  @override
++  State<WidgetPalette> createState() => _WidgetPaletteState();
++}
++
++class _WidgetPaletteState extends State<WidgetPalette> with SingleTickerProviderStateMixin {
++  late TabController _tabController;
++
++  @override
++  void initState() {
++    super.initState();
++    _tabController = TabController(length: 3, vsync: this);
++  }
++
++  @override
++  void dispose() {
++    _tabController.dispose();
++    super.dispose();
++  }
++
+   @override
+   Widget build(BuildContext context) {
++    return Column(
++      children: [
++        // Header
++        Padding(
++          padding: const EdgeInsets.all(16),
++          child: Text(
++            'Widget Palette',
++            style: Theme.of(context).textTheme.titleLarge?.copyWith(
++              fontWeight: FontWeight.bold,
++            ),
++          ),
++        ),
++        
++        // Tabs
++        TabBar(
++          controller: _tabController,
++          tabs: const [
++            Tab(
++              icon: Icon(Icons.widgets),
++              text: 'Widgets',
++            ),
++            Tab(
++              icon: Icon(Icons.lightbulb),
++              text: 'AI Suggestions',
++            ),
++            Tab(
++              icon: Icon(Icons.design_services),
++              text: 'UI Design',
++            ),
++          ],
++        ),
++        
++        // Tab Content
++        Expanded(
++          child: TabBarView(
++            controller: _tabController,
++            children: [
++              _buildWidgetsTab(),
++              const AISuggestionPanel(),
++              const UIDesignPanel(),
++            ],
++          ),
++        ),
++      ],
++    );
++  }
++
++  Widget _buildWidgetsTab() {
+     final widgetTypes = [
+       {'type': 'Container', 'icon': Icons.crop_square, 'color': Colors.blue},
+       {'type': 'Text', 'icon': Icons.text_fields, 'color': Colors.green},
+@@ -23,34 +91,17 @@
+       {'type': 'AppBar', 'icon': Icons.web_asset, 'color': Colors.deepOrange},
+     ];
+ 
+-    return Column(
+-      crossAxisAlignment: CrossAxisAlignment.start,
+-      children: [
+-        Padding(
+-          padding: const EdgeInsets.all(16),
+-          child: Text(
+-            'Widget Palette',
+-            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+-              fontWeight: FontWeight.bold,
+-            ),
+-          ),
+-        ),
+-        const Divider(height: 1),
+-        Expanded(
+-          child: ListView.builder(
+-            padding: const EdgeInsets.all(12),
+-            itemCount: widgetTypes.length,
+-            itemBuilder: (context, index) {
+-              final widget = widgetTypes[index];
+-              return _WidgetPaletteItem(
+-                type: widget['type'] as String,
+-                icon: widget['icon'] as IconData,
+-                color: widget['color'] as Color,
+-              );
+-            },
+-          ),
+-        ),
+-      ],
++    return ListView.builder(
++      padding: const EdgeInsets.all(12),
++      itemCount: widgetTypes.length,
++      itemBuilder: (context, index) {
++        final widget = widgetTypes[index];
++        return _WidgetPaletteItem(
++          type: widget['type'] as String,
++          icon: widget['icon'] as IconData,
++          color: widget['color'] as Color,
++        );
++      },
+     );
+   }
+ }
+Index: axiomBackend/package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"axiom-backend\",\r\n  \"version\": \"1.0.0\",\r\n  \"lockfileVersion\": 3,\r\n  \"requires\": true,\r\n  \"packages\": {\r\n    \"\": {\r\n      \"name\": \"axiom-backend\",\r\n      \"version\": \"1.0.0\",\r\n      \"license\": \"ISC\",\r\n      \"dependencies\": {\r\n        \"axios\": \"^1.13.2\",\r\n        \"bcryptjs\": \"^3.0.3\",\r\n        \"cors\": \"^2.8.5\",\r\n        \"dotenv\": \"^17.2.3\",\r\n        \"express\": \"^5.2.1\",\r\n        \"jsonwebtoken\": \"^9.0.3\",\r\n        \"mongoose\": \"^9.0.2\",\r\n        \"openai\": \"^6.15.0\",\r\n        \"socket.io\": \"^4.8.3\",\r\n        \"winston\": \"^3.19.0\"\r\n      },\r\n      \"devDependencies\": {\r\n        \"nodemon\": \"^3.1.11\"\r\n      }\r\n    },\r\n    \"node_modules/@colors/colors\": {\r\n      \"version\": \"1.6.0\",\r\n      \"resolved\": \"https://registry.npmjs.org/@colors/colors/-/colors-1.6.0.tgz\",\r\n      \"integrity\": \"sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=0.1.90\"\r\n      }\r\n    },\r\n    \"node_modules/@dabh/diagnostics\": {\r\n      \"version\": \"2.0.8\",\r\n      \"resolved\": \"https://registry.npmjs.org/@dabh/diagnostics/-/diagnostics-2.0.8.tgz\",\r\n      \"integrity\": \"sha512-R4MSXTVnuMzGD7bzHdW2ZhhdPC/igELENcq5IjEverBvq5hn1SXCWcsi6eSsdWP0/Ur+SItRRjAktmdoX/8R/Q==\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"@so-ric/colorspace\": \"^1.1.6\",\r\n        \"enabled\": \"2.0.x\",\r\n        \"kuler\": \"^2.0.0\"\r\n      }\r\n    },\r\n    \"node_modules/@mongodb-js/saslprep\": {\r\n      \"version\": \"1.4.4\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"sparse-bitfield\": \"^3.0.3\"\r\n      }\r\n    },\r\n    \"node_modules/@so-ric/colorspace\": {\r\n      \"version\": \"1.1.6\",\r\n      \"resolved\": \"https://registry.npmjs.org/@so-ric/colorspace/-/colorspace-1.1.6.tgz\",\r\n      \"integrity\": \"sha512-/KiKkpHNOBgkFJwu9sh48LkHSMYGyuTcSFK/qMBdnOAlrRJzRSXAOFB5qwzaVQuDl8wAvHVMkaASQDReTahxuw==\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"color\": \"^5.0.2\",\r\n        \"text-hex\": \"1.0.x\"\r\n      }\r\n    },\r\n    \"node_modules/@socket.io/component-emitter\": {\r\n      \"version\": \"3.1.2\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/@types/cors\": {\r\n      \"version\": \"2.8.19\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"@types/node\": \"*\"\r\n      }\r\n    },\r\n    \"node_modules/@types/node\": {\r\n      \"version\": \"25.0.3\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"undici-types\": \"~7.16.0\"\r\n      }\r\n    },\r\n    \"node_modules/@types/triple-beam\": {\r\n      \"version\": \"1.3.5\",\r\n      \"resolved\": \"https://registry.npmjs.org/@types/triple-beam/-/triple-beam-1.3.5.tgz\",\r\n      \"integrity\": \"sha512-6WaYesThRMCl19iryMYP7/x2OVgCtbIVflDGFpWnb9irXI3UjYE4AzmYuiUKY1AJstGijoY+MgUszMgRxIYTYw==\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/@types/webidl-conversions\": {\r\n      \"version\": \"7.0.3\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/@types/whatwg-url\": {\r\n      \"version\": \"13.0.0\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"@types/webidl-conversions\": \"*\"\r\n      }\r\n    },\r\n    \"node_modules/accepts\": {\r\n      \"version\": \"2.0.0\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"mime-types\": \"^3.0.0\",\r\n        \"negotiator\": \"^1.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/anymatch\": {\r\n      \"version\": \"3.1.3\",\r\n      \"dev\": true,\r\n      \"license\": \"ISC\",\r\n      \"dependencies\": {\r\n        \"normalize-path\": \"^3.0.0\",\r\n        \"picomatch\": \"^2.0.4\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 8\"\r\n      }\r\n    },\r\n    \"node_modules/async\": {\r\n      \"version\": \"3.2.6\",\r\n      \"resolved\": \"https://registry.npmjs.org/async/-/async-3.2.6.tgz\",\r\n      \"integrity\": \"sha512-htCUDlxyyCLMgaM3xXg0C0LW2xqfuQ6p05pCEIsXuyQ+a1koYKTuBMzRNwmybfLgvJDMd0r1LTn4+E0Ti6C2AA==\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/asynckit\": {\r\n      \"version\": \"0.4.0\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/axios\": {\r\n      \"version\": \"1.13.2\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"follow-redirects\": \"^1.15.6\",\r\n        \"form-data\": \"^4.0.4\",\r\n        \"proxy-from-env\": \"^1.1.0\"\r\n      }\r\n    },\r\n    \"node_modules/balanced-match\": {\r\n      \"version\": \"1.0.2\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/base64id\": {\r\n      \"version\": \"2.0.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \"^4.5.0 || >= 5.9\"\r\n      }\r\n    },\r\n    \"node_modules/bcryptjs\": {\r\n      \"version\": \"3.0.3\",\r\n      \"license\": \"BSD-3-Clause\",\r\n      \"bin\": {\r\n        \"bcrypt\": \"bin/bcrypt\"\r\n      }\r\n    },\r\n    \"node_modules/binary-extensions\": {\r\n      \"version\": \"2.3.0\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=8\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/sindresorhus\"\r\n      }\r\n    },\r\n    \"node_modules/body-parser\": {\r\n      \"version\": \"2.2.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"bytes\": \"^3.1.2\",\r\n        \"content-type\": \"^1.0.5\",\r\n        \"debug\": \"^4.4.3\",\r\n        \"http-errors\": \"^2.0.0\",\r\n        \"iconv-lite\": \"^0.7.0\",\r\n        \"on-finished\": \"^2.4.1\",\r\n        \"qs\": \"^6.14.0\",\r\n        \"raw-body\": \"^3.0.1\",\r\n        \"type-is\": \"^2.0.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=18\"\r\n      },\r\n      \"funding\": {\r\n        \"type\": \"opencollective\",\r\n        \"url\": \"https://opencollective.com/express\"\r\n      }\r\n    },\r\n    \"node_modules/brace-expansion\": {\r\n      \"version\": \"1.1.12\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"balanced-match\": \"^1.0.0\",\r\n        \"concat-map\": \"0.0.1\"\r\n      }\r\n    },\r\n    \"node_modules/braces\": {\r\n      \"version\": \"3.0.3\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"fill-range\": \"^7.1.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=8\"\r\n      }\r\n    },\r\n    \"node_modules/bson\": {\r\n      \"version\": \"7.0.0\",\r\n      \"license\": \"Apache-2.0\",\r\n      \"engines\": {\r\n        \"node\": \">=20.19.0\"\r\n      }\r\n    },\r\n    \"node_modules/buffer-equal-constant-time\": {\r\n      \"version\": \"1.0.1\",\r\n      \"license\": \"BSD-3-Clause\"\r\n    },\r\n    \"node_modules/bytes\": {\r\n      \"version\": \"3.1.2\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.8\"\r\n      }\r\n    },\r\n    \"node_modules/call-bind-apply-helpers\": {\r\n      \"version\": \"1.0.2\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"es-errors\": \"^1.3.0\",\r\n        \"function-bind\": \"^1.1.2\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      }\r\n    },\r\n    \"node_modules/call-bound\": {\r\n      \"version\": \"1.0.4\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"call-bind-apply-helpers\": \"^1.0.2\",\r\n        \"get-intrinsic\": \"^1.3.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/ljharb\"\r\n      }\r\n    },\r\n    \"node_modules/chokidar\": {\r\n      \"version\": \"3.6.0\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"anymatch\": \"~3.1.2\",\r\n        \"braces\": \"~3.0.2\",\r\n        \"glob-parent\": \"~5.1.2\",\r\n        \"is-binary-path\": \"~2.1.0\",\r\n        \"is-glob\": \"~4.0.1\",\r\n        \"normalize-path\": \"~3.0.0\",\r\n        \"readdirp\": \"~3.6.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 8.10.0\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://paulmillr.com/funding/\"\r\n      },\r\n      \"optionalDependencies\": {\r\n        \"fsevents\": \"~2.3.2\"\r\n      }\r\n    },\r\n    \"node_modules/color\": {\r\n      \"version\": \"5.0.3\",\r\n      \"resolved\": \"https://registry.npmjs.org/color/-/color-5.0.3.tgz\",\r\n      \"integrity\": \"sha512-ezmVcLR3xAVp8kYOm4GS45ZLLgIE6SPAFoduLr6hTDajwb3KZ2F46gulK3XpcwRFb5KKGCSezCBAY4Dw4HsyXA==\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"color-convert\": \"^3.1.3\",\r\n        \"color-string\": \"^2.1.3\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=18\"\r\n      }\r\n    },\r\n    \"node_modules/color-convert\": {\r\n      \"version\": \"3.1.3\",\r\n      \"resolved\": \"https://registry.npmjs.org/color-convert/-/color-convert-3.1.3.tgz\",\r\n      \"integrity\": \"sha512-fasDH2ont2GqF5HpyO4w0+BcewlhHEZOFn9c1ckZdHpJ56Qb7MHhH/IcJZbBGgvdtwdwNbLvxiBEdg336iA9Sg==\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"color-name\": \"^2.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=14.6\"\r\n      }\r\n    },\r\n    \"node_modules/color-name\": {\r\n      \"version\": \"2.1.0\",\r\n      \"resolved\": \"https://registry.npmjs.org/color-name/-/color-name-2.1.0.tgz\",\r\n      \"integrity\": \"sha512-1bPaDNFm0axzE4MEAzKPuqKWeRaT43U/hyxKPBdqTfmPF+d6n7FSoTFxLVULUJOmiLp01KjhIPPH+HrXZJN4Rg==\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=12.20\"\r\n      }\r\n    },\r\n    \"node_modules/color-string\": {\r\n      \"version\": \"2.1.4\",\r\n      \"resolved\": \"https://registry.npmjs.org/color-string/-/color-string-2.1.4.tgz\",\r\n      \"integrity\": \"sha512-Bb6Cq8oq0IjDOe8wJmi4JeNn763Xs9cfrBcaylK1tPypWzyoy2G3l90v9k64kjphl/ZJjPIShFztenRomi8WTg==\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"color-name\": \"^2.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=18\"\r\n      }\r\n    },\r\n    \"node_modules/combined-stream\": {\r\n      \"version\": \"1.0.8\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"delayed-stream\": \"~1.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.8\"\r\n      }\r\n    },\r\n    \"node_modules/concat-map\": {\r\n      \"version\": \"0.0.1\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/content-disposition\": {\r\n      \"version\": \"1.0.1\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=18\"\r\n      },\r\n      \"funding\": {\r\n        \"type\": \"opencollective\",\r\n        \"url\": \"https://opencollective.com/express\"\r\n      }\r\n    },\r\n    \"node_modules/content-type\": {\r\n      \"version\": \"1.0.5\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/cookie\": {\r\n      \"version\": \"0.7.2\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/cookie-signature\": {\r\n      \"version\": \"1.2.2\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=6.6.0\"\r\n      }\r\n    },\r\n    \"node_modules/cors\": {\r\n      \"version\": \"2.8.5\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"object-assign\": \"^4\",\r\n        \"vary\": \"^1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.10\"\r\n      }\r\n    },\r\n    \"node_modules/debug\": {\r\n      \"version\": \"4.4.3\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"ms\": \"^2.1.3\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=6.0\"\r\n      },\r\n      \"peerDependenciesMeta\": {\r\n        \"supports-color\": {\r\n          \"optional\": true\r\n        }\r\n      }\r\n    },\r\n    \"node_modules/delayed-stream\": {\r\n      \"version\": \"1.0.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=0.4.0\"\r\n      }\r\n    },\r\n    \"node_modules/depd\": {\r\n      \"version\": \"2.0.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.8\"\r\n      }\r\n    },\r\n    \"node_modules/dotenv\": {\r\n      \"version\": \"17.2.3\",\r\n      \"license\": \"BSD-2-Clause\",\r\n      \"engines\": {\r\n        \"node\": \">=12\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://dotenvx.com\"\r\n      }\r\n    },\r\n    \"node_modules/dunder-proto\": {\r\n      \"version\": \"1.0.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"call-bind-apply-helpers\": \"^1.0.1\",\r\n        \"es-errors\": \"^1.3.0\",\r\n        \"gopd\": \"^1.2.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      }\r\n    },\r\n    \"node_modules/ecdsa-sig-formatter\": {\r\n      \"version\": \"1.0.11\",\r\n      \"license\": \"Apache-2.0\",\r\n      \"dependencies\": {\r\n        \"safe-buffer\": \"^5.0.1\"\r\n      }\r\n    },\r\n    \"node_modules/ee-first\": {\r\n      \"version\": \"1.1.1\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/enabled\": {\r\n      \"version\": \"2.0.0\",\r\n      \"resolved\": \"https://registry.npmjs.org/enabled/-/enabled-2.0.0.tgz\",\r\n      \"integrity\": \"sha512-AKrN98kuwOzMIdAizXGI86UFBoo26CL21UM763y1h/GMSJ4/OHU9k2YlsmBpyScFo/wbLzWQJBMCW4+IO3/+OQ==\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/encodeurl\": {\r\n      \"version\": \"2.0.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.8\"\r\n      }\r\n    },\r\n    \"node_modules/engine.io\": {\r\n      \"version\": \"6.6.5\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"@types/cors\": \"^2.8.12\",\r\n        \"@types/node\": \">=10.0.0\",\r\n        \"accepts\": \"~1.3.4\",\r\n        \"base64id\": \"2.0.0\",\r\n        \"cookie\": \"~0.7.2\",\r\n        \"cors\": \"~2.8.5\",\r\n        \"debug\": \"~4.4.1\",\r\n        \"engine.io-parser\": \"~5.2.1\",\r\n        \"ws\": \"~8.18.3\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=10.2.0\"\r\n      }\r\n    },\r\n    \"node_modules/engine.io-parser\": {\r\n      \"version\": \"5.2.3\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=10.0.0\"\r\n      }\r\n    },\r\n    \"node_modules/engine.io/node_modules/accepts\": {\r\n      \"version\": \"1.3.8\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"mime-types\": \"~2.1.34\",\r\n        \"negotiator\": \"0.6.3\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/engine.io/node_modules/mime-db\": {\r\n      \"version\": \"1.52.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/engine.io/node_modules/mime-types\": {\r\n      \"version\": \"2.1.35\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"mime-db\": \"1.52.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/engine.io/node_modules/negotiator\": {\r\n      \"version\": \"0.6.3\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/es-define-property\": {\r\n      \"version\": \"1.0.1\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      }\r\n    },\r\n    \"node_modules/es-errors\": {\r\n      \"version\": \"1.3.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      }\r\n    },\r\n    \"node_modules/es-object-atoms\": {\r\n      \"version\": \"1.1.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"es-errors\": \"^1.3.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      }\r\n    },\r\n    \"node_modules/es-set-tostringtag\": {\r\n      \"version\": \"2.1.0\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"es-errors\": \"^1.3.0\",\r\n        \"get-intrinsic\": \"^1.2.6\",\r\n        \"has-tostringtag\": \"^1.0.2\",\r\n        \"hasown\": \"^2.0.2\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      }\r\n    },\r\n    \"node_modules/escape-html\": {\r\n      \"version\": \"1.0.3\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/etag\": {\r\n      \"version\": \"1.8.1\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/express\": {\r\n      \"version\": \"5.2.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"accepts\": \"^2.0.0\",\r\n        \"body-parser\": \"^2.2.1\",\r\n        \"content-disposition\": \"^1.0.0\",\r\n        \"content-type\": \"^1.0.5\",\r\n        \"cookie\": \"^0.7.1\",\r\n        \"cookie-signature\": \"^1.2.1\",\r\n        \"debug\": \"^4.4.0\",\r\n        \"depd\": \"^2.0.0\",\r\n        \"encodeurl\": \"^2.0.0\",\r\n        \"escape-html\": \"^1.0.3\",\r\n        \"etag\": \"^1.8.1\",\r\n        \"finalhandler\": \"^2.1.0\",\r\n        \"fresh\": \"^2.0.0\",\r\n        \"http-errors\": \"^2.0.0\",\r\n        \"merge-descriptors\": \"^2.0.0\",\r\n        \"mime-types\": \"^3.0.0\",\r\n        \"on-finished\": \"^2.4.1\",\r\n        \"once\": \"^1.4.0\",\r\n        \"parseurl\": \"^1.3.3\",\r\n        \"proxy-addr\": \"^2.0.7\",\r\n        \"qs\": \"^6.14.0\",\r\n        \"range-parser\": \"^1.2.1\",\r\n        \"router\": \"^2.2.0\",\r\n        \"send\": \"^1.1.0\",\r\n        \"serve-static\": \"^2.2.0\",\r\n        \"statuses\": \"^2.0.1\",\r\n        \"type-is\": \"^2.0.1\",\r\n        \"vary\": \"^1.1.2\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 18\"\r\n      },\r\n      \"funding\": {\r\n        \"type\": \"opencollective\",\r\n        \"url\": \"https://opencollective.com/express\"\r\n      }\r\n    },\r\n    \"node_modules/fecha\": {\r\n      \"version\": \"4.2.3\",\r\n      \"resolved\": \"https://registry.npmjs.org/fecha/-/fecha-4.2.3.tgz\",\r\n      \"integrity\": \"sha512-OP2IUU6HeYKJi3i0z4A19kHMQoLVs4Hc+DPqqxI2h/DPZHTm/vjsfC6P0b4jCMy14XizLBqvndQ+UilD7707Jw==\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/fill-range\": {\r\n      \"version\": \"7.1.1\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"to-regex-range\": \"^5.0.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=8\"\r\n      }\r\n    },\r\n    \"node_modules/finalhandler\": {\r\n      \"version\": \"2.1.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"debug\": \"^4.4.0\",\r\n        \"encodeurl\": \"^2.0.0\",\r\n        \"escape-html\": \"^1.0.3\",\r\n        \"on-finished\": \"^2.4.1\",\r\n        \"parseurl\": \"^1.3.3\",\r\n        \"statuses\": \"^2.0.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 18.0.0\"\r\n      },\r\n      \"funding\": {\r\n        \"type\": \"opencollective\",\r\n        \"url\": \"https://opencollective.com/express\"\r\n      }\r\n    },\r\n    \"node_modules/fn.name\": {\r\n      \"version\": \"1.1.0\",\r\n      \"resolved\": \"https://registry.npmjs.org/fn.name/-/fn.name-1.1.0.tgz\",\r\n      \"integrity\": \"sha512-GRnmB5gPyJpAhTQdSZTSp9uaPSvl09KoYcMQtsB9rQoOmzs9dH6ffeccH+Z+cv6P68Hu5bC6JjRh4Ah/mHSNRw==\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/follow-redirects\": {\r\n      \"version\": \"1.15.11\",\r\n      \"funding\": [\r\n        {\r\n          \"type\": \"individual\",\r\n          \"url\": \"https://github.com/sponsors/RubenVerborgh\"\r\n        }\r\n      ],\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=4.0\"\r\n      },\r\n      \"peerDependenciesMeta\": {\r\n        \"debug\": {\r\n          \"optional\": true\r\n        }\r\n      }\r\n    },\r\n    \"node_modules/form-data\": {\r\n      \"version\": \"4.0.5\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"asynckit\": \"^0.4.0\",\r\n        \"combined-stream\": \"^1.0.8\",\r\n        \"es-set-tostringtag\": \"^2.1.0\",\r\n        \"hasown\": \"^2.0.2\",\r\n        \"mime-types\": \"^2.1.12\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 6\"\r\n      }\r\n    },\r\n    \"node_modules/form-data/node_modules/mime-db\": {\r\n      \"version\": \"1.52.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/form-data/node_modules/mime-types\": {\r\n      \"version\": \"2.1.35\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"mime-db\": \"1.52.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/forwarded\": {\r\n      \"version\": \"0.2.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/fresh\": {\r\n      \"version\": \"2.0.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.8\"\r\n      }\r\n    },\r\n    \"node_modules/fsevents\": {\r\n      \"version\": \"2.3.3\",\r\n      \"resolved\": \"https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz\",\r\n      \"integrity\": \"sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==\",\r\n      \"dev\": true,\r\n      \"hasInstallScript\": true,\r\n      \"license\": \"MIT\",\r\n      \"optional\": true,\r\n      \"os\": [\r\n        \"darwin\"\r\n      ],\r\n      \"engines\": {\r\n        \"node\": \"^8.16.0 || ^10.6.0 || >=11.0.0\"\r\n      }\r\n    },\r\n    \"node_modules/function-bind\": {\r\n      \"version\": \"1.1.2\",\r\n      \"license\": \"MIT\",\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/ljharb\"\r\n      }\r\n    },\r\n    \"node_modules/get-intrinsic\": {\r\n      \"version\": \"1.3.0\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"call-bind-apply-helpers\": \"^1.0.2\",\r\n        \"es-define-property\": \"^1.0.1\",\r\n        \"es-errors\": \"^1.3.0\",\r\n        \"es-object-atoms\": \"^1.1.1\",\r\n        \"function-bind\": \"^1.1.2\",\r\n        \"get-proto\": \"^1.0.1\",\r\n        \"gopd\": \"^1.2.0\",\r\n        \"has-symbols\": \"^1.1.0\",\r\n        \"hasown\": \"^2.0.2\",\r\n        \"math-intrinsics\": \"^1.1.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/ljharb\"\r\n      }\r\n    },\r\n    \"node_modules/get-proto\": {\r\n      \"version\": \"1.0.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"dunder-proto\": \"^1.0.1\",\r\n        \"es-object-atoms\": \"^1.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      }\r\n    },\r\n    \"node_modules/glob-parent\": {\r\n      \"version\": \"5.1.2\",\r\n      \"dev\": true,\r\n      \"license\": \"ISC\",\r\n      \"dependencies\": {\r\n        \"is-glob\": \"^4.0.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 6\"\r\n      }\r\n    },\r\n    \"node_modules/gopd\": {\r\n      \"version\": \"1.2.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/ljharb\"\r\n      }\r\n    },\r\n    \"node_modules/has-flag\": {\r\n      \"version\": \"3.0.0\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=4\"\r\n      }\r\n    },\r\n    \"node_modules/has-symbols\": {\r\n      \"version\": \"1.1.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/ljharb\"\r\n      }\r\n    },\r\n    \"node_modules/has-tostringtag\": {\r\n      \"version\": \"1.0.2\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"has-symbols\": \"^1.0.3\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/ljharb\"\r\n      }\r\n    },\r\n    \"node_modules/hasown\": {\r\n      \"version\": \"2.0.2\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"function-bind\": \"^1.1.2\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      }\r\n    },\r\n    \"node_modules/http-errors\": {\r\n      \"version\": \"2.0.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"depd\": \"~2.0.0\",\r\n        \"inherits\": \"~2.0.4\",\r\n        \"setprototypeof\": \"~1.2.0\",\r\n        \"statuses\": \"~2.0.2\",\r\n        \"toidentifier\": \"~1.0.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.8\"\r\n      },\r\n      \"funding\": {\r\n        \"type\": \"opencollective\",\r\n        \"url\": \"https://opencollective.com/express\"\r\n      }\r\n    },\r\n    \"node_modules/iconv-lite\": {\r\n      \"version\": \"0.7.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"safer-buffer\": \">= 2.1.2 < 3.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=0.10.0\"\r\n      },\r\n      \"funding\": {\r\n        \"type\": \"opencollective\",\r\n        \"url\": \"https://opencollective.com/express\"\r\n      }\r\n    },\r\n    \"node_modules/ignore-by-default\": {\r\n      \"version\": \"1.0.1\",\r\n      \"dev\": true,\r\n      \"license\": \"ISC\"\r\n    },\r\n    \"node_modules/inherits\": {\r\n      \"version\": \"2.0.4\",\r\n      \"license\": \"ISC\"\r\n    },\r\n    \"node_modules/ipaddr.js\": {\r\n      \"version\": \"1.9.1\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.10\"\r\n      }\r\n    },\r\n    \"node_modules/is-binary-path\": {\r\n      \"version\": \"2.1.0\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"binary-extensions\": \"^2.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=8\"\r\n      }\r\n    },\r\n    \"node_modules/is-extglob\": {\r\n      \"version\": \"2.1.1\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=0.10.0\"\r\n      }\r\n    },\r\n    \"node_modules/is-glob\": {\r\n      \"version\": \"4.0.3\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"is-extglob\": \"^2.1.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=0.10.0\"\r\n      }\r\n    },\r\n    \"node_modules/is-number\": {\r\n      \"version\": \"7.0.0\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=0.12.0\"\r\n      }\r\n    },\r\n    \"node_modules/is-promise\": {\r\n      \"version\": \"4.0.0\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/is-stream\": {\r\n      \"version\": \"2.0.1\",\r\n      \"resolved\": \"https://registry.npmjs.org/is-stream/-/is-stream-2.0.1.tgz\",\r\n      \"integrity\": \"sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=8\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/sindresorhus\"\r\n      }\r\n    },\r\n    \"node_modules/jsonwebtoken\": {\r\n      \"version\": \"9.0.3\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"jws\": \"^4.0.1\",\r\n        \"lodash.includes\": \"^4.3.0\",\r\n        \"lodash.isboolean\": \"^3.0.3\",\r\n        \"lodash.isinteger\": \"^4.0.4\",\r\n        \"lodash.isnumber\": \"^3.0.3\",\r\n        \"lodash.isplainobject\": \"^4.0.6\",\r\n        \"lodash.isstring\": \"^4.0.1\",\r\n        \"lodash.once\": \"^4.0.0\",\r\n        \"ms\": \"^2.1.1\",\r\n        \"semver\": \"^7.5.4\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=12\",\r\n        \"npm\": \">=6\"\r\n      }\r\n    },\r\n    \"node_modules/jwa\": {\r\n      \"version\": \"2.0.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"buffer-equal-constant-time\": \"^1.0.1\",\r\n        \"ecdsa-sig-formatter\": \"1.0.11\",\r\n        \"safe-buffer\": \"^5.0.1\"\r\n      }\r\n    },\r\n    \"node_modules/jws\": {\r\n      \"version\": \"4.0.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"jwa\": \"^2.0.1\",\r\n        \"safe-buffer\": \"^5.0.1\"\r\n      }\r\n    },\r\n    \"node_modules/kareem\": {\r\n      \"version\": \"3.0.0\",\r\n      \"license\": \"Apache-2.0\",\r\n      \"engines\": {\r\n        \"node\": \">=18.0.0\"\r\n      }\r\n    },\r\n    \"node_modules/kuler\": {\r\n      \"version\": \"2.0.0\",\r\n      \"resolved\": \"https://registry.npmjs.org/kuler/-/kuler-2.0.0.tgz\",\r\n      \"integrity\": \"sha512-Xq9nH7KlWZmXAtodXDDRE7vs6DU1gTU8zYDHDiWLSip45Egwq3plLHzPn27NgvzL2r1LMPC1vdqh98sQxtqj4A==\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/lodash.includes\": {\r\n      \"version\": \"4.3.0\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/lodash.isboolean\": {\r\n      \"version\": \"3.0.3\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/lodash.isinteger\": {\r\n      \"version\": \"4.0.4\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/lodash.isnumber\": {\r\n      \"version\": \"3.0.3\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/lodash.isplainobject\": {\r\n      \"version\": \"4.0.6\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/lodash.isstring\": {\r\n      \"version\": \"4.0.1\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/lodash.once\": {\r\n      \"version\": \"4.1.1\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/logform\": {\r\n      \"version\": \"2.7.0\",\r\n      \"resolved\": \"https://registry.npmjs.org/logform/-/logform-2.7.0.tgz\",\r\n      \"integrity\": \"sha512-TFYA4jnP7PVbmlBIfhlSe+WKxs9dklXMTEGcBCIvLhE/Tn3H6Gk1norupVW7m5Cnd4bLcr08AytbyV/xj7f/kQ==\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"@colors/colors\": \"1.6.0\",\r\n        \"@types/triple-beam\": \"^1.3.2\",\r\n        \"fecha\": \"^4.2.0\",\r\n        \"ms\": \"^2.1.1\",\r\n        \"safe-stable-stringify\": \"^2.3.1\",\r\n        \"triple-beam\": \"^1.3.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 12.0.0\"\r\n      }\r\n    },\r\n    \"node_modules/math-intrinsics\": {\r\n      \"version\": \"1.1.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      }\r\n    },\r\n    \"node_modules/media-typer\": {\r\n      \"version\": \"1.1.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.8\"\r\n      }\r\n    },\r\n    \"node_modules/memory-pager\": {\r\n      \"version\": \"1.5.0\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/merge-descriptors\": {\r\n      \"version\": \"2.0.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=18\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/sindresorhus\"\r\n      }\r\n    },\r\n    \"node_modules/mime-db\": {\r\n      \"version\": \"1.54.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/mime-types\": {\r\n      \"version\": \"3.0.2\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"mime-db\": \"^1.54.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=18\"\r\n      },\r\n      \"funding\": {\r\n        \"type\": \"opencollective\",\r\n        \"url\": \"https://opencollective.com/express\"\r\n      }\r\n    },\r\n    \"node_modules/minimatch\": {\r\n      \"version\": \"3.1.2\",\r\n      \"dev\": true,\r\n      \"license\": \"ISC\",\r\n      \"dependencies\": {\r\n        \"brace-expansion\": \"^1.1.7\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \"*\"\r\n      }\r\n    },\r\n    \"node_modules/mongodb\": {\r\n      \"version\": \"7.0.0\",\r\n      \"license\": \"Apache-2.0\",\r\n      \"dependencies\": {\r\n        \"@mongodb-js/saslprep\": \"^1.3.0\",\r\n        \"bson\": \"^7.0.0\",\r\n        \"mongodb-connection-string-url\": \"^7.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=20.19.0\"\r\n      },\r\n      \"peerDependencies\": {\r\n        \"@aws-sdk/credential-providers\": \"^3.806.0\",\r\n        \"@mongodb-js/zstd\": \"^7.0.0\",\r\n        \"gcp-metadata\": \"^7.0.1\",\r\n        \"kerberos\": \"^7.0.0\",\r\n        \"mongodb-client-encryption\": \">=7.0.0 <7.1.0\",\r\n        \"snappy\": \"^7.3.2\",\r\n        \"socks\": \"^2.8.6\"\r\n      },\r\n      \"peerDependenciesMeta\": {\r\n        \"@aws-sdk/credential-providers\": {\r\n          \"optional\": true\r\n        },\r\n        \"@mongodb-js/zstd\": {\r\n          \"optional\": true\r\n        },\r\n        \"gcp-metadata\": {\r\n          \"optional\": true\r\n        },\r\n        \"kerberos\": {\r\n          \"optional\": true\r\n        },\r\n        \"mongodb-client-encryption\": {\r\n          \"optional\": true\r\n        },\r\n        \"snappy\": {\r\n          \"optional\": true\r\n        },\r\n        \"socks\": {\r\n          \"optional\": true\r\n        }\r\n      }\r\n    },\r\n    \"node_modules/mongodb-connection-string-url\": {\r\n      \"version\": \"7.0.0\",\r\n      \"license\": \"Apache-2.0\",\r\n      \"dependencies\": {\r\n        \"@types/whatwg-url\": \"^13.0.0\",\r\n        \"whatwg-url\": \"^14.1.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=20.19.0\"\r\n      }\r\n    },\r\n    \"node_modules/mongoose\": {\r\n      \"version\": \"9.0.2\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"kareem\": \"3.0.0\",\r\n        \"mongodb\": \"~7.0\",\r\n        \"mpath\": \"0.9.0\",\r\n        \"mquery\": \"6.0.0\",\r\n        \"ms\": \"2.1.3\",\r\n        \"sift\": \"17.1.3\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=20.19.0\"\r\n      },\r\n      \"funding\": {\r\n        \"type\": \"opencollective\",\r\n        \"url\": \"https://opencollective.com/mongoose\"\r\n      }\r\n    },\r\n    \"node_modules/mpath\": {\r\n      \"version\": \"0.9.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=4.0.0\"\r\n      }\r\n    },\r\n    \"node_modules/mquery\": {\r\n      \"version\": \"6.0.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=20.19.0\"\r\n      }\r\n    },\r\n    \"node_modules/ms\": {\r\n      \"version\": \"2.1.3\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/negotiator\": {\r\n      \"version\": \"1.0.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/nodemon\": {\r\n      \"version\": \"3.1.11\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"chokidar\": \"^3.5.2\",\r\n        \"debug\": \"^4\",\r\n        \"ignore-by-default\": \"^1.0.1\",\r\n        \"minimatch\": \"^3.1.2\",\r\n        \"pstree.remy\": \"^1.1.8\",\r\n        \"semver\": \"^7.5.3\",\r\n        \"simple-update-notifier\": \"^2.0.0\",\r\n        \"supports-color\": \"^5.5.0\",\r\n        \"touch\": \"^3.1.0\",\r\n        \"undefsafe\": \"^2.0.5\"\r\n      },\r\n      \"bin\": {\r\n        \"nodemon\": \"bin/nodemon.js\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=10\"\r\n      },\r\n      \"funding\": {\r\n        \"type\": \"opencollective\",\r\n        \"url\": \"https://opencollective.com/nodemon\"\r\n      }\r\n    },\r\n    \"node_modules/normalize-path\": {\r\n      \"version\": \"3.0.0\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=0.10.0\"\r\n      }\r\n    },\r\n    \"node_modules/object-assign\": {\r\n      \"version\": \"4.1.1\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=0.10.0\"\r\n      }\r\n    },\r\n    \"node_modules/object-inspect\": {\r\n      \"version\": \"1.13.4\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/ljharb\"\r\n      }\r\n    },\r\n    \"node_modules/on-finished\": {\r\n      \"version\": \"2.4.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"ee-first\": \"1.1.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.8\"\r\n      }\r\n    },\r\n    \"node_modules/once\": {\r\n      \"version\": \"1.4.0\",\r\n      \"license\": \"ISC\",\r\n      \"dependencies\": {\r\n        \"wrappy\": \"1\"\r\n      }\r\n    },\r\n    \"node_modules/one-time\": {\r\n      \"version\": \"1.0.0\",\r\n      \"resolved\": \"https://registry.npmjs.org/one-time/-/one-time-1.0.0.tgz\",\r\n      \"integrity\": \"sha512-5DXOiRKwuSEcQ/l0kGCF6Q3jcADFv5tSmRaJck/OqkVFcOzutB134KRSfF0xDrL39MNnqxbHBbUUcjZIhTgb2g==\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"fn.name\": \"1.x.x\"\r\n      }\r\n    },\r\n    \"node_modules/openai\": {\r\n      \"version\": \"6.15.0\",\r\n      \"license\": \"Apache-2.0\",\r\n      \"bin\": {\r\n        \"openai\": \"bin/cli\"\r\n      },\r\n      \"peerDependencies\": {\r\n        \"ws\": \"^8.18.0\",\r\n        \"zod\": \"^3.25 || ^4.0\"\r\n      },\r\n      \"peerDependenciesMeta\": {\r\n        \"ws\": {\r\n          \"optional\": true\r\n        },\r\n        \"zod\": {\r\n          \"optional\": true\r\n        }\r\n      }\r\n    },\r\n    \"node_modules/parseurl\": {\r\n      \"version\": \"1.3.3\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.8\"\r\n      }\r\n    },\r\n    \"node_modules/path-to-regexp\": {\r\n      \"version\": \"8.3.0\",\r\n      \"license\": \"MIT\",\r\n      \"funding\": {\r\n        \"type\": \"opencollective\",\r\n        \"url\": \"https://opencollective.com/express\"\r\n      }\r\n    },\r\n    \"node_modules/picomatch\": {\r\n      \"version\": \"2.3.1\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=8.6\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/jonschlinkert\"\r\n      }\r\n    },\r\n    \"node_modules/proxy-addr\": {\r\n      \"version\": \"2.0.7\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"forwarded\": \"0.2.0\",\r\n        \"ipaddr.js\": \"1.9.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.10\"\r\n      }\r\n    },\r\n    \"node_modules/proxy-from-env\": {\r\n      \"version\": \"1.1.0\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/pstree.remy\": {\r\n      \"version\": \"1.1.8\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/punycode\": {\r\n      \"version\": \"2.3.1\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=6\"\r\n      }\r\n    },\r\n    \"node_modules/qs\": {\r\n      \"version\": \"6.14.0\",\r\n      \"license\": \"BSD-3-Clause\",\r\n      \"dependencies\": {\r\n        \"side-channel\": \"^1.1.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=0.6\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/ljharb\"\r\n      }\r\n    },\r\n    \"node_modules/range-parser\": {\r\n      \"version\": \"1.2.1\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/raw-body\": {\r\n      \"version\": \"3.0.2\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"bytes\": \"~3.1.2\",\r\n        \"http-errors\": \"~2.0.1\",\r\n        \"iconv-lite\": \"~0.7.0\",\r\n        \"unpipe\": \"~1.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.10\"\r\n      }\r\n    },\r\n    \"node_modules/readable-stream\": {\r\n      \"version\": \"3.6.2\",\r\n      \"resolved\": \"https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.2.tgz\",\r\n      \"integrity\": \"sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"inherits\": \"^2.0.3\",\r\n        \"string_decoder\": \"^1.1.1\",\r\n        \"util-deprecate\": \"^1.0.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 6\"\r\n      }\r\n    },\r\n    \"node_modules/readdirp\": {\r\n      \"version\": \"3.6.0\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"picomatch\": \"^2.2.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=8.10.0\"\r\n      }\r\n    },\r\n    \"node_modules/router\": {\r\n      \"version\": \"2.2.0\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"debug\": \"^4.4.0\",\r\n        \"depd\": \"^2.0.0\",\r\n        \"is-promise\": \"^4.0.0\",\r\n        \"parseurl\": \"^1.3.3\",\r\n        \"path-to-regexp\": \"^8.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 18\"\r\n      }\r\n    },\r\n    \"node_modules/safe-buffer\": {\r\n      \"version\": \"5.2.1\",\r\n      \"funding\": [\r\n        {\r\n          \"type\": \"github\",\r\n          \"url\": \"https://github.com/sponsors/feross\"\r\n        },\r\n        {\r\n          \"type\": \"patreon\",\r\n          \"url\": \"https://www.patreon.com/feross\"\r\n        },\r\n        {\r\n          \"type\": \"consulting\",\r\n          \"url\": \"https://feross.org/support\"\r\n        }\r\n      ],\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/safe-stable-stringify\": {\r\n      \"version\": \"2.5.0\",\r\n      \"resolved\": \"https://registry.npmjs.org/safe-stable-stringify/-/safe-stable-stringify-2.5.0.tgz\",\r\n      \"integrity\": \"sha512-b3rppTKm9T+PsVCBEOUR46GWI7fdOs00VKZ1+9c1EWDaDMvjQc6tUwuFyIprgGgTcWoVHSKrU8H31ZHA2e0RHA==\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=10\"\r\n      }\r\n    },\r\n    \"node_modules/safer-buffer\": {\r\n      \"version\": \"2.1.2\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/semver\": {\r\n      \"version\": \"7.7.3\",\r\n      \"license\": \"ISC\",\r\n      \"bin\": {\r\n        \"semver\": \"bin/semver.js\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=10\"\r\n      }\r\n    },\r\n    \"node_modules/send\": {\r\n      \"version\": \"1.2.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"debug\": \"^4.4.3\",\r\n        \"encodeurl\": \"^2.0.0\",\r\n        \"escape-html\": \"^1.0.3\",\r\n        \"etag\": \"^1.8.1\",\r\n        \"fresh\": \"^2.0.0\",\r\n        \"http-errors\": \"^2.0.1\",\r\n        \"mime-types\": \"^3.0.2\",\r\n        \"ms\": \"^2.1.3\",\r\n        \"on-finished\": \"^2.4.1\",\r\n        \"range-parser\": \"^1.2.1\",\r\n        \"statuses\": \"^2.0.2\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 18\"\r\n      },\r\n      \"funding\": {\r\n        \"type\": \"opencollective\",\r\n        \"url\": \"https://opencollective.com/express\"\r\n      }\r\n    },\r\n    \"node_modules/serve-static\": {\r\n      \"version\": \"2.2.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"encodeurl\": \"^2.0.0\",\r\n        \"escape-html\": \"^1.0.3\",\r\n        \"parseurl\": \"^1.3.3\",\r\n        \"send\": \"^1.2.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 18\"\r\n      },\r\n      \"funding\": {\r\n        \"type\": \"opencollective\",\r\n        \"url\": \"https://opencollective.com/express\"\r\n      }\r\n    },\r\n    \"node_modules/setprototypeof\": {\r\n      \"version\": \"1.2.0\",\r\n      \"license\": \"ISC\"\r\n    },\r\n    \"node_modules/side-channel\": {\r\n      \"version\": \"1.1.0\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"es-errors\": \"^1.3.0\",\r\n        \"object-inspect\": \"^1.13.3\",\r\n        \"side-channel-list\": \"^1.0.0\",\r\n        \"side-channel-map\": \"^1.0.1\",\r\n        \"side-channel-weakmap\": \"^1.0.2\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/ljharb\"\r\n      }\r\n    },\r\n    \"node_modules/side-channel-list\": {\r\n      \"version\": \"1.0.0\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"es-errors\": \"^1.3.0\",\r\n        \"object-inspect\": \"^1.13.3\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/ljharb\"\r\n      }\r\n    },\r\n    \"node_modules/side-channel-map\": {\r\n      \"version\": \"1.0.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"call-bound\": \"^1.0.2\",\r\n        \"es-errors\": \"^1.3.0\",\r\n        \"get-intrinsic\": \"^1.2.5\",\r\n        \"object-inspect\": \"^1.13.3\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/ljharb\"\r\n      }\r\n    },\r\n    \"node_modules/side-channel-weakmap\": {\r\n      \"version\": \"1.0.2\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"call-bound\": \"^1.0.2\",\r\n        \"es-errors\": \"^1.3.0\",\r\n        \"get-intrinsic\": \"^1.2.5\",\r\n        \"object-inspect\": \"^1.13.3\",\r\n        \"side-channel-map\": \"^1.0.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.4\"\r\n      },\r\n      \"funding\": {\r\n        \"url\": \"https://github.com/sponsors/ljharb\"\r\n      }\r\n    },\r\n    \"node_modules/sift\": {\r\n      \"version\": \"17.1.3\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/simple-update-notifier\": {\r\n      \"version\": \"2.0.0\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"semver\": \"^7.5.3\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=10\"\r\n      }\r\n    },\r\n    \"node_modules/socket.io\": {\r\n      \"version\": \"4.8.3\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"accepts\": \"~1.3.4\",\r\n        \"base64id\": \"~2.0.0\",\r\n        \"cors\": \"~2.8.5\",\r\n        \"debug\": \"~4.4.1\",\r\n        \"engine.io\": \"~6.6.0\",\r\n        \"socket.io-adapter\": \"~2.5.2\",\r\n        \"socket.io-parser\": \"~4.2.4\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=10.2.0\"\r\n      }\r\n    },\r\n    \"node_modules/socket.io-adapter\": {\r\n      \"version\": \"2.5.6\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"debug\": \"~4.4.1\",\r\n        \"ws\": \"~8.18.3\"\r\n      }\r\n    },\r\n    \"node_modules/socket.io-parser\": {\r\n      \"version\": \"4.2.5\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"@socket.io/component-emitter\": \"~3.1.0\",\r\n        \"debug\": \"~4.4.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=10.0.0\"\r\n      }\r\n    },\r\n    \"node_modules/socket.io/node_modules/accepts\": {\r\n      \"version\": \"1.3.8\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"mime-types\": \"~2.1.34\",\r\n        \"negotiator\": \"0.6.3\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/socket.io/node_modules/mime-db\": {\r\n      \"version\": \"1.52.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/socket.io/node_modules/mime-types\": {\r\n      \"version\": \"2.1.35\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"mime-db\": \"1.52.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/socket.io/node_modules/negotiator\": {\r\n      \"version\": \"0.6.3\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/sparse-bitfield\": {\r\n      \"version\": \"3.0.3\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"memory-pager\": \"^1.0.2\"\r\n      }\r\n    },\r\n    \"node_modules/stack-trace\": {\r\n      \"version\": \"0.0.10\",\r\n      \"resolved\": \"https://registry.npmjs.org/stack-trace/-/stack-trace-0.0.10.tgz\",\r\n      \"integrity\": \"sha512-KGzahc7puUKkzyMt+IqAep+TVNbKP+k2Lmwhub39m1AsTSkaDutx56aDCo+HLDzf/D26BIHTJWNiTG1KAJiQCg==\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \"*\"\r\n      }\r\n    },\r\n    \"node_modules/statuses\": {\r\n      \"version\": \"2.0.2\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.8\"\r\n      }\r\n    },\r\n    \"node_modules/string_decoder\": {\r\n      \"version\": \"1.3.0\",\r\n      \"resolved\": \"https://registry.npmjs.org/string_decoder/-/string_decoder-1.3.0.tgz\",\r\n      \"integrity\": \"sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"safe-buffer\": \"~5.2.0\"\r\n      }\r\n    },\r\n    \"node_modules/supports-color\": {\r\n      \"version\": \"5.5.0\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"has-flag\": \"^3.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=4\"\r\n      }\r\n    },\r\n    \"node_modules/text-hex\": {\r\n      \"version\": \"1.0.0\",\r\n      \"resolved\": \"https://registry.npmjs.org/text-hex/-/text-hex-1.0.0.tgz\",\r\n      \"integrity\": \"sha512-uuVGNWzgJ4yhRaNSiubPY7OjISw4sw4E5Uv0wbjp+OzcbmVU/rsT8ujgcXJhn9ypzsgr5vlzpPqP+MBBKcGvbg==\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/to-regex-range\": {\r\n      \"version\": \"5.0.1\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"is-number\": \"^7.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=8.0\"\r\n      }\r\n    },\r\n    \"node_modules/toidentifier\": {\r\n      \"version\": \"1.0.1\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">=0.6\"\r\n      }\r\n    },\r\n    \"node_modules/touch\": {\r\n      \"version\": \"3.1.1\",\r\n      \"dev\": true,\r\n      \"license\": \"ISC\",\r\n      \"bin\": {\r\n        \"nodetouch\": \"bin/nodetouch.js\"\r\n      }\r\n    },\r\n    \"node_modules/tr46\": {\r\n      \"version\": \"5.1.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"punycode\": \"^2.3.1\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=18\"\r\n      }\r\n    },\r\n    \"node_modules/triple-beam\": {\r\n      \"version\": \"1.4.1\",\r\n      \"resolved\": \"https://registry.npmjs.org/triple-beam/-/triple-beam-1.4.1.tgz\",\r\n      \"integrity\": \"sha512-aZbgViZrg1QNcG+LULa7nhZpJTZSLm/mXnHXnbAbjmN5aSa0y7V+wvv6+4WaBtpISJzThKy+PIPxc1Nq1EJ9mg==\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 14.0.0\"\r\n      }\r\n    },\r\n    \"node_modules/type-is\": {\r\n      \"version\": \"2.0.1\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"content-type\": \"^1.0.5\",\r\n        \"media-typer\": \"^1.1.0\",\r\n        \"mime-types\": \"^3.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 0.6\"\r\n      }\r\n    },\r\n    \"node_modules/undefsafe\": {\r\n      \"version\": \"2.0.5\",\r\n      \"dev\": true,\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/undici-types\": {\r\n      \"version\": \"7.16.0\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/unpipe\": {\r\n      \"version\": \"1.0.0\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.8\"\r\n      }\r\n    },\r\n    \"node_modules/util-deprecate\": {\r\n      \"version\": \"1.0.2\",\r\n      \"resolved\": \"https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz\",\r\n      \"integrity\": \"sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==\",\r\n      \"license\": \"MIT\"\r\n    },\r\n    \"node_modules/vary\": {\r\n      \"version\": \"1.1.2\",\r\n      \"license\": \"MIT\",\r\n      \"engines\": {\r\n        \"node\": \">= 0.8\"\r\n      }\r\n    },\r\n    \"node_modules/webidl-conversions\": {\r\n      \"version\": \"7.0.0\",\r\n      \"license\": \"BSD-2-Clause\",\r\n      \"engines\": {\r\n        \"node\": \">=12\"\r\n      }\r\n    },\r\n    \"node_modules/whatwg-url\": {\r\n      \"version\": \"14.2.0\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"tr46\": \"^5.1.0\",\r\n        \"webidl-conversions\": \"^7.0.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">=18\"\r\n      }\r\n    },\r\n    \"node_modules/winston\": {\r\n      \"version\": \"3.19.0\",\r\n      \"resolved\": \"https://registry.npmjs.org/winston/-/winston-3.19.0.tgz\",\r\n      \"integrity\": \"sha512-LZNJgPzfKR+/J3cHkxcpHKpKKvGfDZVPS4hfJCc4cCG0CgYzvlD6yE/S3CIL/Yt91ak327YCpiF/0MyeZHEHKA==\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"@colors/colors\": \"^1.6.0\",\r\n        \"@dabh/diagnostics\": \"^2.0.8\",\r\n        \"async\": \"^3.2.3\",\r\n        \"is-stream\": \"^2.0.0\",\r\n        \"logform\": \"^2.7.0\",\r\n        \"one-time\": \"^1.0.0\",\r\n        \"readable-stream\": \"^3.4.0\",\r\n        \"safe-stable-stringify\": \"^2.3.1\",\r\n        \"stack-trace\": \"0.0.x\",\r\n        \"triple-beam\": \"^1.3.0\",\r\n        \"winston-transport\": \"^4.9.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 12.0.0\"\r\n      }\r\n    },\r\n    \"node_modules/winston-transport\": {\r\n      \"version\": \"4.9.0\",\r\n      \"resolved\": \"https://registry.npmjs.org/winston-transport/-/winston-transport-4.9.0.tgz\",\r\n      \"integrity\": \"sha512-8drMJ4rkgaPo1Me4zD/3WLfI/zPdA9o2IipKODunnGDcuqbHwjsbB79ylv04LCGGzU0xQ6vTznOMpQGaLhhm6A==\",\r\n      \"license\": \"MIT\",\r\n      \"dependencies\": {\r\n        \"logform\": \"^2.7.0\",\r\n        \"readable-stream\": \"^3.6.2\",\r\n        \"triple-beam\": \"^1.3.0\"\r\n      },\r\n      \"engines\": {\r\n        \"node\": \">= 12.0.0\"\r\n      }\r\n    },\r\n    \"node_modules/wrappy\": {\r\n      \"version\": \"1.0.2\",\r\n      \"license\": \"ISC\"\r\n    },\r\n    \"node_modules/ws\": {\r\n      \"version\": \"8.18.3\",\r\n      \"license\": \"MIT\",\r\n      \"peer\": true,\r\n      \"engines\": {\r\n        \"node\": \">=10.0.0\"\r\n      },\r\n      \"peerDependencies\": {\r\n        \"bufferutil\": \"^4.0.1\",\r\n        \"utf-8-validate\": \">=5.0.2\"\r\n      },\r\n      \"peerDependenciesMeta\": {\r\n        \"bufferutil\": {\r\n          \"optional\": true\r\n        },\r\n        \"utf-8-validate\": {\r\n          \"optional\": true\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/axiomBackend/package-lock.json b/axiomBackend/package-lock.json
+--- a/axiomBackend/package-lock.json	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ b/axiomBackend/package-lock.json	(date 1769607159826)
+@@ -16,7 +16,7 @@
+         "express": "^5.2.1",
+         "jsonwebtoken": "^9.0.3",
+         "mongoose": "^9.0.2",
+-        "openai": "^6.15.0",
++        "node-fetch": "^3.3.2",
+         "socket.io": "^4.8.3",
+         "winston": "^3.19.0"
+       },
+@@ -380,6 +380,15 @@
+         "node": ">= 0.10"
+       }
+     },
++    "node_modules/data-uri-to-buffer": {
++      "version": "4.0.1",
++      "resolved": "https://registry.npmjs.org/data-uri-to-buffer/-/data-uri-to-buffer-4.0.1.tgz",
++      "integrity": "sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==",
++      "license": "MIT",
++      "engines": {
++        "node": ">= 12"
++      }
++    },
+     "node_modules/debug": {
+       "version": "4.4.3",
+       "license": "MIT",
+@@ -610,6 +619,29 @@
+       "integrity": "sha512-OP2IUU6HeYKJi3i0z4A19kHMQoLVs4Hc+DPqqxI2h/DPZHTm/vjsfC6P0b4jCMy14XizLBqvndQ+UilD7707Jw==",
+       "license": "MIT"
+     },
++    "node_modules/fetch-blob": {
++      "version": "3.2.0",
++      "resolved": "https://registry.npmjs.org/fetch-blob/-/fetch-blob-3.2.0.tgz",
++      "integrity": "sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==",
++      "funding": [
++        {
++          "type": "github",
++          "url": "https://github.com/sponsors/jimmywarting"
++        },
++        {
++          "type": "paypal",
++          "url": "https://paypal.me/jimmywarting"
++        }
++      ],
++      "license": "MIT",
++      "dependencies": {
++        "node-domexception": "^1.0.0",
++        "web-streams-polyfill": "^3.0.3"
++      },
++      "engines": {
++        "node": "^12.20 || >= 14.13"
++      }
++    },
+     "node_modules/fill-range": {
+       "version": "7.1.1",
+       "dev": true,
+@@ -695,6 +727,18 @@
+         "node": ">= 0.6"
+       }
+     },
++    "node_modules/formdata-polyfill": {
++      "version": "4.0.10",
++      "resolved": "https://registry.npmjs.org/formdata-polyfill/-/formdata-polyfill-4.0.10.tgz",
++      "integrity": "sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==",
++      "license": "MIT",
++      "dependencies": {
++        "fetch-blob": "^3.1.2"
++      },
++      "engines": {
++        "node": ">=12.20.0"
++      }
++    },
+     "node_modules/forwarded": {
+       "version": "0.2.0",
+       "license": "MIT",
+@@ -1182,6 +1226,44 @@
+         "node": ">= 0.6"
+       }
+     },
++    "node_modules/node-domexception": {
++      "version": "1.0.0",
++      "resolved": "https://registry.npmjs.org/node-domexception/-/node-domexception-1.0.0.tgz",
++      "integrity": "sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==",
++      "deprecated": "Use your platform's native DOMException instead",
++      "funding": [
++        {
++          "type": "github",
++          "url": "https://github.com/sponsors/jimmywarting"
++        },
++        {
++          "type": "github",
++          "url": "https://paypal.me/jimmywarting"
++        }
++      ],
++      "license": "MIT",
++      "engines": {
++        "node": ">=10.5.0"
++      }
++    },
++    "node_modules/node-fetch": {
++      "version": "3.3.2",
++      "resolved": "https://registry.npmjs.org/node-fetch/-/node-fetch-3.3.2.tgz",
++      "integrity": "sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA==",
++      "license": "MIT",
++      "dependencies": {
++        "data-uri-to-buffer": "^4.0.0",
++        "fetch-blob": "^3.1.4",
++        "formdata-polyfill": "^4.0.10"
++      },
++      "engines": {
++        "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
++      },
++      "funding": {
++        "type": "opencollective",
++        "url": "https://opencollective.com/node-fetch"
++      }
++    },
+     "node_modules/nodemon": {
+       "version": "3.1.11",
+       "dev": true,
+@@ -1260,25 +1342,6 @@
+         "fn.name": "1.x.x"
+       }
+     },
+-    "node_modules/openai": {
+-      "version": "6.15.0",
+-      "license": "Apache-2.0",
+-      "bin": {
+-        "openai": "bin/cli"
+-      },
+-      "peerDependencies": {
+-        "ws": "^8.18.0",
+-        "zod": "^3.25 || ^4.0"
+-      },
+-      "peerDependenciesMeta": {
+-        "ws": {
+-          "optional": true
+-        },
+-        "zod": {
+-          "optional": true
+-        }
+-      }
+-    },
+     "node_modules/parseurl": {
+       "version": "1.3.3",
+       "license": "MIT",
+@@ -1774,6 +1837,15 @@
+         "node": ">= 0.8"
+       }
+     },
++    "node_modules/web-streams-polyfill": {
++      "version": "3.3.3",
++      "resolved": "https://registry.npmjs.org/web-streams-polyfill/-/web-streams-polyfill-3.3.3.tgz",
++      "integrity": "sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw==",
++      "license": "MIT",
++      "engines": {
++        "node": ">= 8"
++      }
++    },
+     "node_modules/webidl-conversions": {
+       "version": "7.0.0",
+       "license": "BSD-2-Clause",
+@@ -1835,7 +1907,6 @@
+     "node_modules/ws": {
+       "version": "8.18.3",
+       "license": "MIT",
+-      "peer": true,
+       "engines": {
+         "node": ">=10.0.0"
+       },
+Index: axiom/lib/screens/Dashboard.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nimport 'package:axiom/Library/Utils.dart';\r\nimport 'package:flutter/material.dart';\r\nimport 'package:provider/provider.dart';\r\nimport '../Library/CommonWidgets/ProjectCard.dart';\r\nimport '../providers/ProjectProvider.dart';\r\nimport '../services/auth_service.dart';\r\n\r\nclass Dashboard extends StatefulWidget {\r\n  const Dashboard({super.key});\r\n\r\n  @override\r\n  State<Dashboard> createState() => _DashboardState();\r\n}\r\n\r\nclass _DashboardState extends State<Dashboard> {\r\n  @override\r\n  void initState() {\r\n    super.initState();\r\n    WidgetsBinding.instance.addPostFrameCallback((_) {\r\n      context.read<ProjectProvider>().loadProjects();\r\n    });\r\n  }\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Scaffold(\r\n      appBar: AppBar(\r\n        automaticallyImplyLeading: false,\r\n        title: const Text('My Projects'),\r\n        actions: [\r\n          IconButton(\r\n            icon: const Icon(Icons.logout),\r\n            onPressed: () async {\r\n              await context.read<AuthService>().logout();\r\n              if (context.mounted) {\r\n                Navigator.pushReplacementNamed(context, '/login');\r\n              }\r\n            },\r\n          ),\r\n        ],\r\n      ),\r\n      body: Consumer<ProjectProvider>(\r\n        builder: (context, provider, child) {\r\n          if (provider.isLoading) {\r\n            return const Center(child: CircularProgressIndicator());\r\n          }\r\n\r\n          if (provider.error != null) {\r\n            return Center(\r\n              child: Column(\r\n                mainAxisAlignment: MainAxisAlignment.center,\r\n                children: [\r\n                  Icon(Icons.error, size: 64, color: Colors.red.shade300),\r\n                  const SizedBox(height: 16),\r\n                  Text('Error: ${provider.error}'),\r\n                  const SizedBox(height: 16),\r\n                  ElevatedButton(\r\n                    onPressed: () => provider.loadProjects(),\r\n                    child: const Text('Retry'),\r\n                  ),\r\n                ],\r\n              ),\r\n            );\r\n          }\r\n\r\n          if (provider.projects.isEmpty) {\r\n            return Utils().buildEmptyState(context,'dashboard');\r\n          }\r\n\r\n          return GridView.builder(\r\n            padding: const EdgeInsets.all(24),\r\n            gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(\r\n              maxCrossAxisExtent: 350,\r\n              childAspectRatio: 1.2,\r\n              crossAxisSpacing: 20,\r\n              mainAxisSpacing: 20,\r\n            ),\r\n            itemCount: provider.projects.length,\r\n            itemBuilder: (context, index) {\r\n              final project = provider.projects[index];\r\n              return ProjectCard(\r\n                title: project.name,\r\n                description: project.description,\r\n                onTap: () {\r\n                  Navigator.pushNamed(\r\n                    context,\r\n                    '/editor',\r\n                    arguments: project.id,\r\n                  );\r\n                },\r\n                onDelete: () async {\r\n                  final confirm = await Utils().showDeleteConfirmation(context);\r\n                  if (confirm == true && context.mounted) {\r\n                    await provider.deleteProject(project.id);\r\n                  }\r\n                },\r\n              );\r\n            },\r\n          );\r\n        },\r\n      ),\r\n      floatingActionButton: FloatingActionButton.extended(\r\n        onPressed: () => Utils().showCreateProjectDialog(context),\r\n        icon: const Icon(Icons.add),\r\n        label: const Text('New Project'),\r\n      ),\r\n    );\r\n  }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/axiom/lib/screens/Dashboard.dart b/axiom/lib/screens/Dashboard.dart
+--- a/axiom/lib/screens/Dashboard.dart	(revision 972fdcc0f0d88fbf9fa8b584f2653f881c3acfe2)
++++ b/axiom/lib/screens/Dashboard.dart	(date 1769604902690)
+@@ -1,4 +1,3 @@
+-
+ import 'package:axiom/Library/Utils.dart';
+ import 'package:flutter/material.dart';
+ import 'package:provider/provider.dart';
+@@ -29,6 +28,13 @@
+         automaticallyImplyLeading: false,
+         title: const Text('My Projects'),
+         actions: [
++          IconButton(
++            icon: const Icon(Icons.smart_toy),
++            onPressed: () {
++              Navigator.pushNamed(context, '/ai-agent');
++            },
++            tooltip: 'AI Assistant',
++          ),
+           IconButton(
+             icon: const Icon(Icons.logout),
+             onPressed: () async {

@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  axiom-agent:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - BACKEND_URL=http://host.docker.internal:5000
+      - AGENT_HOST=0.0.0.0
+      - AGENT_PORT=8000
+      - QDRANT_URL=http://qdrant:6333
+    volumes:
+      - ./config:/app/config
+      - ./tools:/app/tools
+      - ./memory:/app/memory
+      - ./graph:/app/graph
+      - ./models:/app/models
+    depends_on:
+      - qdrant
+    networks:
+      - axiom-network
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    networks:
+      - axiom-network
+
+volumes:
+  qdrant_data:
+
+networks:
+  axiom-network:
+    driver: bridge

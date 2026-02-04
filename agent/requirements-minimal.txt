@@ -1,0 +1,2 @@
+# Minimal version - only requests needed
+requests==2.31.0
