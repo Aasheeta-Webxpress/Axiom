@@ -1,0 +1,86 @@
+name: 🚀 Deploy Axiom
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.38.9'
+        channel: 'stable'
+    
+    - name: Build Flutter
+      run: |
+        cd axiom
+        flutter clean
+        flutter pub get
+        flutter build web --release
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./axiom/build/web
+    
+    - name: Build Backend
+      run: |
+        cd axiomBackend
+        docker build -t axiom-backend .
+    
+    - name: Create docker-compose
+      run: |
+        cat > docker-compose.yml << 'EOF'
+        version: '3.8'
+        
+        services:
+          axiom-backend:
+            build: ./axiomBackend
+            ports:
+              - "5000:5000"
+            environment:
+              - NODE_ENV=production
+              - MONGODB_URI=mongodb://mongodb:27017/axiom
+              - REDIS_URL=redis://redis:6379
+            depends_on:
+              - mongodb
+              - redis
+            restart: unless-stopped
+          
+          mongodb:
+            image: mongo:7.0
+            ports:
+              - "27017:27017"
+            volumes:
+              - mongodb_data:/data/db
+              - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+            restart: unless-stopped
+          
+          redis:
+            image: redis:7.2-alpine
+            ports:
+              - "6379:6379"
+            command: redis-server --appendonly yes
+            volumes:
+              - redis_data:/data
+            restart: unless-stopped
+        
+        volumes:
+          mongodb_data:
+          redis_data:
+        EOF
+    
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add docker-compose.yml
+        git commit -m "Add simple deployment setup" || exit 0
+        git push
