@@ -22,7 +22,12 @@ jobs:
         cd axiom
         flutter clean
         flutter pub get
-        flutter build web --release
+        flutter config --enable-web
+        flutter build web --release --web-renderer canvaskit
+        ls -la build/web/
+        echo "=== Checking if files exist ==="
+        ls -la build/web/index.html || echo "index.html missing"
+        ls -la build/web/main.dart.js || echo "main.dart.js missing"
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
