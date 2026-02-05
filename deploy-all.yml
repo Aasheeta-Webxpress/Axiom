@@ -35,12 +35,13 @@ jobs:
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.16.0'
+        flutter-version: '3.38.9'
         channel: 'stable'
         cache: true
     
     - name: Setup Flutter Web
       run: |
+        flutter --disable-analytics
         flutter config --enable-web
         flutter doctor -v
     
@@ -48,7 +49,7 @@ jobs:
       run: |
         cd axiom
         flutter clean
-        flutter pub get
+        flutter pub get --no-prerelease
     
     - name: Build Flutter Web App
       run: |
