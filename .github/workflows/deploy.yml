@@ -23,7 +23,7 @@ jobs:
         flutter clean
         flutter pub get
         flutter config --enable-web
-        flutter build web --release --no-sound-null-safety
+        flutter build web --release
         ls -la build/web/
         echo "=== Checking if files exist ==="
         ls -la build/web/index.html || echo "index.html missing"
