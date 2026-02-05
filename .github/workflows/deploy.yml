@@ -49,6 +49,10 @@ jobs:
         # Create .nojekyll
         touch .nojekyll
         
+        # List all files to verify
+        echo "=== All files in build/web ==="
+        ls -la build/web/
+        
         # Ensure index.html exists
         if [ ! -f index.html ]; then
           echo '<!DOCTYPE html><html><head><title>Axiom</title></head><body><h1>Loading Axiom...</h1></body></html>' > index.html
