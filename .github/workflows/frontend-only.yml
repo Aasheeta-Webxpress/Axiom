@@ -29,7 +29,7 @@ jobs:
       run: |
         cd axiom
         flutter clean
-        flutter pub get --no-prerelease
+        flutter pub get
     
     - name: Build Flutter Web App
       run: |
