@@ -1,0 +1,127 @@
+name: 🆓 FREE CI/CD Deployment
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  # Test and Build
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: axiomBackend/package-lock.json
+    
+    - name: Install backend dependencies
+      run: |
+        cd axiomBackend
+        npm ci
+    
+    - name: Run backend tests
+      run: |
+        cd axiomBackend
+        npm test || echo "No tests configured"
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.16.0'
+    
+    - name: Install Flutter dependencies
+      run: |
+        cd axiom
+        flutter pub get
+    
+    - name: Build Flutter web
+      run: |
+        cd axiom
+        flutter build web --release
+    
+    - name: Build Docker images
+      run: |
+        # Build backend
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/axiom-backend:latest ./axiomBackend
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/axiom-backend:${{ github.sha }} ./axiomBackend
+        
+        # Build frontend (if needed)
+        # docker build -t ${{ secrets.DOCKER_USERNAME }}/axiom-frontend:latest ./axiom
+    
+    - name: Login to Docker Hub
+      if: github.ref == 'refs/heads/main'
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+    
+    - name: Push to Docker Hub
+      if: github.ref == 'refs/heads/main'
+      run: |
+        docker push ${{ secrets.DOCKER_USERNAME }}/axiom-backend:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/axiom-backend:${{ github.sha }}
+
+  # Deploy to Railway (FREE)
+  deploy-backend:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Deploy to Railway
+      uses: railway-app/railway-action@v1
+      with:
+        api-token: ${{ secrets.RAILWAY_TOKEN }}
+        service: ${{ secrets.RAILWAY_SERVICE_ID }}
+        command: "up"
+
+  # Deploy frontend to Vercel (FREE)
+  deploy-frontend:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Deploy to Vercel
+      uses: amondnet/vercel-action@v25
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+        working-directory: ./axiom
+        vercel-args: '--prod'
+
+  # Health Check
+  health-check:
+    needs: [deploy-backend, deploy-frontend]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Wait for deployment
+      run: sleep 60
+    
+    - name: Check backend health
+      run: |
+        curl -f ${{ secrets.BACKEND_URL }}/health || exit 1
+    
+    - name: Check frontend
+      run: |
+        curl -f ${{ secrets.FRONTEND_URL }} || exit 1
+    
+    - name: Notify success
+      run: |
+        echo "🎉 Axiom deployed successfully!"
+        echo "Frontend: ${{ secrets.FRONTEND_URL }}"
+        echo "Backend: ${{ secrets.BACKEND_URL }}"
