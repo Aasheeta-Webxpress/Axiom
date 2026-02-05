@@ -86,6 +86,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git remote set-url origin https://${{ secrets.GH_PATH }}@github.com/Aasheeta-Webxpress/Axiom.git
         git add docker-compose.yml
         git commit -m "Add simple deployment setup" || exit 0
         git push
