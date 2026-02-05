@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  axiom-backend:
+    build: ./axiomBackend
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://mongodb:27017/axiom
+      - REDIS_URL=redis://redis:6379
+      - JWT_SECRET=your-production-secret-change-this
+      - PORT=5000
+      - CORS_ORIGIN=*
+    depends_on:
+      - mongodb
+      - redis
+    restart: unless-stopped
+  
+  mongodb:
+    image: mongo:6.0
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=axiom
+    volumes:
+      - mongodb_data:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    restart: unless-stopped
+  
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+volumes:
+  mongodb_data:
+  redis_data:

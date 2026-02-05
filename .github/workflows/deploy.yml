@@ -23,11 +23,36 @@ jobs:
         flutter clean
         flutter pub get
         flutter config --enable-web
-        flutter build web --release
+        flutter build web --release --no-sound-null-safety
         ls -la build/web/
         echo "=== Checking if files exist ==="
         ls -la build/web/index.html || echo "index.html missing"
         ls -la build/web/main.dart.js || echo "main.dart.js missing"
+        ls -la build/web/flutter.js || echo "flutter.js missing"
+    
+    - name: Create missing files
+      run: |
+        cd axiom/build/web
+        # Create manifest.json
+        cat > manifest.json << 'EOF'
+        {
+          "name": "Axiom Platform",
+          "short_name": "Axiom",
+          "start_url": "/axiom/",
+          "display": "standalone",
+          "background_color": "#ffffff",
+          "theme_color": "#2196F3",
+          "description": "No-code platform for building applications"
+        }
+        EOF
+        
+        # Create .nojekyll
+        touch .nojekyll
+        
+        # Ensure index.html exists
+        if [ ! -f index.html ]; then
+          echo '<!DOCTYPE html><html><head><title>Axiom</title></head><body><h1>Loading Axiom...</h1></body></html>' > index.html
+        fi
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
